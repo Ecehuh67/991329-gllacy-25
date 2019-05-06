@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Кирилл](https://up.htmlacademy.ru/htmlcss/25/user/991329).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Зубов] (https://up.htmlacademy.ru/htmlcss/25/user/42701).
 
 ---
 
