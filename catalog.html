@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
         <nav>
-            <a href="#" class="main-logo">
+            <a href="index.html" class="main-logo">
                 <img src="#" alt="Логотип Глейси Шоп">
             </a>
             <ul сlass="main-navigation">
@@ -27,42 +27,29 @@
         </nav>
     </header>
     <main>
-        <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Каталог</a></li>
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
             <li><a href="#">Сливочное</a></li>
         </ul>
-        <h2>Перечень товара</h1>
-        <h3>Сливочное мороженное</h2>
-        <section>
-            <ul class="main-items">
+        <h1>Перечень товара</h1>
+        <h2>Сливочное мороженное</h2>
+        <!--Здесь будет форма-->
+        <section class="catalog">
+            <ul class="catalog-items">
                 <li>
-                    <a href="#">
-                        <img src="#" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                    </a>
-                    <p>310Р<span class="main-weight-of-price">/кг</span></p>
-                    <p class="main-description-of-ice-cream">
+                    <h3 class="catalog-title-of-ice-cream">
                         Сливочное с апельсиновым джемом и цитрусовой стружкой
+                    </h3>
+                    <p>
+                        <a href="#">
+                            <img src="#" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                        </a>
+                    </p>
+                    <p><span class="catalog-price">310Р</span><span class="catalog-weight-of-price">/кг</span>
                     </p>
                 </li>
-                <li>
-                    <a href="#">
-                        <img src="#" alt="Сливочно-кофейное с кусочками шоколада">
-                    </a>
-                    <p>380Р<span class="main-weight-of-price">/кг</span></p>
-                    <p class="main-description-of-ice-cream">
-                        Сливочно-кофейное с кусочками шоколада
-                    </p>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="#" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                    </a>
-                    <p>355Р<span class="main-weight-of-price">/кг</span></p>
-                    <p class="main-description-of-ice-cream">
-                        Сливочно-клубничное с присыпкой из белого шоколада
-                    </p>
-                </li>
+
 
             </ul>
         </section>
@@ -90,7 +77,7 @@
                 <a href="#">Экологические стандарты</a>
             </p>
             <span class="footer-copyright">
-                <a href="https://htmlacademy.ru">
+                <a href="https://htmlacademy.ru/intensive/htmlcss">
                     <img src="#" alt="Логотип ХТМЛ Академии">
                 </a>
                 <p>Сделано в HTML Academy © 2019</p>
