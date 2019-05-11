@@ -11,12 +11,12 @@
                 <img src="#" alt="Логотип Глейси Шоп">
             </a>
             <ul сlass="main-navigation">
-                <li><a href="#">Каталог</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="#">Доставка и оплата</a></li>
                 <li><a href="#">О Компании</a></li>
             </ul>
             <div class="main-user-fields">
-                <a href="#" class="main-search">Поиск</a>
+                <a href="#" class="main-search">Поиск</a> <!--Может здесь уместно использовать поле <input type="search"-->
                 <a href="#" сlass="main-enterance">Вход</a>
                 <a href="#" class="main-basket">Корзина</a>
             </div>
@@ -27,9 +27,10 @@
         </nav>
     </header>
     <main>
+        <h1 class="visability-hidden">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
+        <!--Здесь будет слайдер и форма-->
         <section class="main-description">
-            <h1>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
-            <h2>Наши преимущества</h2>
+            <h2 class="visability-hidden">Наши преимущества</h2>
             <ul class="main-description-advantages">
                 <li>
                     <p>Все наше мороженое изготавливается на собственном производстве, с   использованием современного оборудования и проверенных временем технологий.</p>
@@ -46,12 +47,14 @@
         </section>
         <article class=="recipe">
             <b>Новое в нашем блоге</b><br>
-            <a href="#">10 способов сервировки фруктовых щербетов к столу<a>
+            <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
         </article>
         <div class="subscribe">
-            <input type="email" name="email" value="Электронная почта">
-            <button type="submit" name="send">Отправить</button>
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+            <input type="email" name="email" placeholder="Электронная почта">
+            <button type="submit" name="send-email">Отправить</button>
         </div>
+        <!--Здесь будет карта проезда-->
     </main>
     <footer class="main-footer">
         <div class="footer-social">
@@ -63,24 +66,24 @@
             </ul>
         </div>
         <div class="footer-info">
-            <p class="large-customers">
+            <span class="large-customers">
                 <a href="#">Для поставщиков</a>
-            </p>
-            <p classs="foorret-about-us">
-                <a href="#">О производстве</a>
-            </p>
-            <p class="footer-our-documents">
-                <a href="#">Наши документы </a>
-            </p>
-            <p class="Ecologic standarts">
-                <a href="#">Экологические стандарты</a>
-            </p>
-            <span class="footer-copyright">
-                <a href="https://htmlacademy.ru/intensive/htmlcss">
-                    <img src="#" alt="Логотип ХТМЛ Академии">
-                </a>
-                <p>Сделано в HTML Academy © 2019</p>
             </span>
+            <span class="foorret-about-us">
+                <a href="#">О производстве</a>
+            </span>
+            <span class="footer-our-documents">
+                <a href="#">Наши документы </a>
+            </span>
+            <span class="Ecologic standarts">
+                <a href="#">Экологические стандарты</a>
+            </span>
+        </div>
+        <div class="footer-copyright">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+                <img src="#" alt="Логотип ХТМЛ Академии">
+            </a>
+            <span>Сделано в HTML Academy © 2019</span>
         </div>
     </footer>
   </body>
