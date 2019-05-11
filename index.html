@@ -91,7 +91,7 @@
     </footer>
      <!--выпадающий список пункта меню "Каталог"-->
     <section class="hower-catalog">
-        <h2>Каталог товаров</h2>
+        <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="hower-items">
             <li class="points-of-catalog"><a href="#">Новинки</a></li>
             <li class="points-of-catalog"><a href="catalog.html">Сливочное</a></li>
@@ -102,16 +102,32 @@
     </section>
     <!--Форма Личного кабинета-->
     <section class="hower-personal-cabinet">
-        <h2>Личный кабинет</h2>
+        <h2 class="visually-hidden">Личный кабинет</h2>
         <ul class="fields-of-personal-cabinet">
             <li><input type="text" placeholder="Электронная почта"></li>
             <li><input type="text" placeholder="Пароль"></li>
-            <li class="button-identification"><a href="#">Войти</a></li>
+            <li class="button-identification"><button type="submit" name="come-in">Войти</button></li>
         </ul>
         <p class="user-help">
             <span><a href="#">Забыли пароль?</a></span>
             <span><a href="#">Новая регистрация</a></span>
         </p>
+    </section>
+    <!--Поиск по каталогу-->
+    <section>
+        <h2 class="visually-hidden">Поиск по каталогу</h2>
+        <input type="text" placeholder="Что ищем?">
+    </section>
+    <!--Обратная связь-->
+    <section>
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <p>Мы обязательно вам ответим!</p>
+        <ul>
+            <li><input type="text" name="first-name" placeholder="Как вас зовут?"></li>
+            <li><input type="text" name="email-for-call" placeholder="Ваша почта для ответа"></li>
+            <li><textarea placeholder="Напишите что-нибудь..."></textarea></li>
+            <span class="modal-close">x</span>
+        </ul>
     </section>
   </body>
 </html>
