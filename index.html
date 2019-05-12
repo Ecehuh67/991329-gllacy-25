@@ -11,13 +11,44 @@
                 <img src="#" alt="Логотип Глейси Шоп">
             </a>
             <ul class="cite-navigation">
-                <li><a href="catalog.html">Каталог</a></li>
+                <li>
+                    <a href="catalog.html">Каталог</a>
+                    <!--выпадающий список пункта меню "Каталог"-->
+                        <div class="hower-catalog">
+                            <h2 class="visually-hidden">Каталог товаров</h2>
+                            <ul class="hower-items">
+                                <li class="points-of-catalog"><a href="#">Новинки</a></li>
+                                <li class="points-of-catalog"><a href="catalog.html">Сливочное</a></li>
+                                <li class="points-of-catalog"><a href="#">Щербеты</a></li>
+                                <li class="points-of-catalog"><a href="#">Фруктовый лед</a></li>
+                                <li class="points-of-catalog"><a href="#">Мелорин</a></li>
+                            </ul>
+                        </div>
+                </li>
                 <li><a href="#">Доставка и оплата</a></li>
                 <li><a href="#">О Компании</a></li>
             </ul>
             <div class="main-user-fields">
                 <a href="#" class="button-search">Поиск</a>
+                    <!--Поиск по каталогу-->
+                    <div>
+                        <h2 class="visually-hidden">Поиск по каталогу</h2>
+                        <input type="text" placeholder="Что ищем?">
+                    </div>
                 <a href="#" class="button-enterance">Вход</a>
+                    <!--Форма Личного кабинета-->
+                    <div class="hower-personal-cabinet">
+                        <h2 class="visually-hidden">Личный кабинет</h2>
+                        <ul class="fields-of-personal-cabinet">
+                            <li><input type="text" placeholder="Электронная почта"></li>
+                            <li><input type="text" placeholder="Пароль"></li>
+                            <li class="button-identification"><button type="submit" name="come-in">Войти</button></li>
+                        </ul>
+                        <p class="user-help">
+                            <span><a href="#">Забыли пароль?</a></span>
+                            <span><a href="#">Новая регистрация</a></span>
+                        </p>
+                    </div>
                 <a href="#" class="button-basket">Корзина</a>
             </div>
         </nav>
@@ -25,35 +56,7 @@
                 С 10 до 20, ежедневно<br>
                 8 812 450-25-25
             </p>
-            <!--выпадающий список пункта меню "Каталог"-->
-        <section class="hower-catalog">
-               <h2 class="visually-hidden">Каталог товаров</h2>
-               <ul class="hower-items">
-                   <li class="points-of-catalog"><a href="#">Новинки</a></li>
-                   <li class="points-of-catalog"><a href="catalog.html">Сливочное</a></li>
-                   <li class="points-of-catalog"><a href="#">Щербеты</a></li>
-                   <li class="points-of-catalog"><a href="#">Фруктовый лед</a></li>
-                   <li class="points-of-catalog"><a href="#">Мелорин</a></li>
-               </ul>
-        </section>
-        <!--Форма Личного кабинета-->
-        <section class="hower-personal-cabinet">
-            <h2 class="visually-hidden">Личный кабинет</h2>
-            <ul class="fields-of-personal-cabinet">
-                <li><input type="text" placeholder="Электронная почта"></li>
-                <li><input type="text" placeholder="Пароль"></li>
-                <li class="button-identification"><button type="submit" name="come-in">Войти</button></li>
-            </ul>
-            <p class="user-help">
-                <span><a href="#">Забыли пароль?</a></span>
-                <span><a href="#">Новая регистрация</a></span>
-            </p>
-        </section>
-        <!--Поиск по каталогу-->
-        <section>
-            <h2 class="visually-hidden">Поиск по каталогу</h2>
-            <input type="text" placeholder="Что ищем?">
-        </section>
+
     </header>
     <main>
         <!--Здесь будет слайдер и "горячие предложения-->
