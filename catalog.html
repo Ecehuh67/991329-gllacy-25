@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-      <header class="main-header">
+    <header class="main-header">
           <nav class="main-navigation">
               <a href="#" class="main-logo">
                   <img src="#" alt="Логотип Глейси Шоп">
@@ -25,6 +25,36 @@
                   С 10 до 20, ежедневно<br>
                   8 812 450-25-25
               </p>
+              <!--выпадающий список пункта меню "Каталог"-->
+          <section class="hower-catalog">
+                 <h2 class="visually-hidden">Каталог товаров</h2>
+                 <ul class="hower-items">
+                     <li class="points-of-catalog"><a href="#">Новинки</a></li>
+                     <li class="points-of-catalog"><a href="catalog.html">Сливочное</a></li>
+                     <li class="points-of-catalog"><a href="#">Щербеты</a></li>
+                     <li class="points-of-catalog"><a href="#">Фруктовый лед</a></li>
+                     <li class="points-of-catalog"><a href="#">Мелорин</a></li>
+                 </ul>
+          </section>
+          <!--Форма Личного кабинета-->
+          <section class="hower-personal-cabinet">
+              <h2 class="visually-hidden">Личный кабинет</h2>
+              <ul class="fields-of-personal-cabinet">
+                  <li><input type="text" placeholder="Электронная почта"></li>
+                  <li><input type="text" placeholder="Пароль"></li>
+                  <li class="button-identification"><button type="submit" name="come-in">Войти</button></li>
+              </ul>
+              <p class="user-help">
+                  <span><a href="#">Забыли пароль?</a></span>
+                  <span><a href="#">Новая регистрация</a></span>
+              </p>
+          </section>
+          <!--Поиск по каталогу-->
+          <section>
+              <h2 class="visually-hidden">Поиск по каталогу</h2>
+              <input type="text" placeholder="Что ищем?">
+          </section>
+    </header>
     <main>
         <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>

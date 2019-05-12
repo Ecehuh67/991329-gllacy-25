@@ -25,7 +25,35 @@
                 С 10 до 20, ежедневно<br>
                 8 812 450-25-25
             </p>
-
+            <!--выпадающий список пункта меню "Каталог"-->
+        <section class="hower-catalog">
+               <h2 class="visually-hidden">Каталог товаров</h2>
+               <ul class="hower-items">
+                   <li class="points-of-catalog"><a href="#">Новинки</a></li>
+                   <li class="points-of-catalog"><a href="catalog.html">Сливочное</a></li>
+                   <li class="points-of-catalog"><a href="#">Щербеты</a></li>
+                   <li class="points-of-catalog"><a href="#">Фруктовый лед</a></li>
+                   <li class="points-of-catalog"><a href="#">Мелорин</a></li>
+               </ul>
+        </section>
+        <!--Форма Личного кабинета-->
+        <section class="hower-personal-cabinet">
+            <h2 class="visually-hidden">Личный кабинет</h2>
+            <ul class="fields-of-personal-cabinet">
+                <li><input type="text" placeholder="Электронная почта"></li>
+                <li><input type="text" placeholder="Пароль"></li>
+                <li class="button-identification"><button type="submit" name="come-in">Войти</button></li>
+            </ul>
+            <p class="user-help">
+                <span><a href="#">Забыли пароль?</a></span>
+                <span><a href="#">Новая регистрация</a></span>
+            </p>
+        </section>
+        <!--Поиск по каталогу-->
+        <section>
+            <h2 class="visually-hidden">Поиск по каталогу</h2>
+            <input type="text" placeholder="Что ищем?">
+        </section>
     </header>
     <main>
         <!--Здесь будет слайдер и "горячие предложения-->
@@ -52,12 +80,26 @@
                 <h3>10 способов сервировки фруктовых щербетов к столу</h3>
             </a>
         </article>
-        <div class="subscribe">
+        <form class="subscribe">
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
             <input type="email" name="email" placeholder="Электронная почта">
             <button type="submit" name="send-email">Отправить</button>
-        </div>
+        </form>
         <!--Здесь будет карта проезда-->
+        <!--Плашка адреса-->
+        <section>
+            <h2 class="visually-hidden">Адрес главного офиса и офлайн-магазина:</h2>
+            <p>
+                ул. Большая Конюшенная<br>
+                 19/8, Санкт-Петербург
+            </p>
+
+            <h2>Для заказов по телефону:</h2>
+            <p>
+                <span class="contact-number">8 812 450-25-25</span><br>
+                <span "available-time">(с 10 до 20 ежедневно)</span>
+            </p>
+        </section>
     </main>
     <footer class="main-footer">
         <div class="footer-social">
@@ -81,36 +123,6 @@
             <span>Сделано в HTML Academy © 2019</span>
         </div>
     </footer>
-
-     <!--выпадающий список пункта меню "Каталог"-->
-    <section class="hower-catalog">
-        <h2 class="visually-hidden">Каталог товаров</h2>
-        <ul class="hower-items">
-            <li class="points-of-catalog"><a href="#">Новинки</a></li>
-            <li class="points-of-catalog"><a href="catalog.html">Сливочное</a></li>
-            <li class="points-of-catalog"><a href="#">Щербеты</a></li>
-            <li class="points-of-catalog"><a href="#">Фруктовый лед</a></li>
-            <li class="points-of-catalog"><a href="#">Мелорин</a></li>
-        </ul>
-    </section>
-    <!--Форма Личного кабинета-->
-    <section class="hower-personal-cabinet">
-        <h2 class="visually-hidden">Личный кабинет</h2>
-        <ul class="fields-of-personal-cabinet">
-            <li><input type="text" placeholder="Электронная почта"></li>
-            <li><input type="text" placeholder="Пароль"></li>
-            <li class="button-identification"><button type="submit" name="come-in">Войти</button></li>
-        </ul>
-        <p class="user-help">
-            <span><a href="#">Забыли пароль?</a></span>
-            <span><a href="#">Новая регистрация</a></span>
-        </p>
-    </section>
-    <!--Поиск по каталогу-->
-    <section>
-        <h2 class="visually-hidden">Поиск по каталогу</h2>
-        <input type="text" placeholder="Что ищем?">
-    </section>
     <!--Обратная связь-->
     <section class="comments">
         <h2 class="visually-hidden">Обратная связь</h2>
