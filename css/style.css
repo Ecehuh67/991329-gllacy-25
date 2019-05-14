@@ -1,0 +1,55 @@
+body {
+    width: 1250px;
+    height: 2500px;
+
+    font-family: 'Roboto', sans-serif;
+    background: #849d8f;
+}
+
+h1 {
+
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.main-description {
+
+    width: 1180px;
+    height: 315px;
+
+    padding: 5px;
+
+    border: 1px solid black;
+    background: url("img/waffle-pattern.jpg");
+
+}
+
+
+.main-description-advantages li::before {
+    content: : '';
+    background: url("img/ice-cream.cvg");
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.main-description-advantages {
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style-type: none;
+
+    font-size: 16px;
+    line-height: 22px;
+
+}
+
+.main-description-advantages li {
+    width: 570px;
+    height: 115px;
+}
+
+.html-academy-logo {
+    width: 108px;
+    height: 39px;
+}
