@@ -68,28 +68,41 @@
         <h1>Сливочное мороженное</h1>
                     <!--Здесь будет форма с фильтрами-->
         <section>
-
-            <label for="sort">Сортировка:</label>
-            <select id="sort">
-                <option selected>по популярности</option>
-            </select>
-
-            <labe; for="range-of-price">Цена: 100 руб. – 500 руб.</label>
+            <p class="filter-sort">
+                <label for="sort">Сортировка:</label>
+                <select id="sort">
+                    <option selected>по популярности</option>
+                </select>
+            </p>
+            <p class="filter-price-range">
+            <label for="range-of-price">Цена: 100 руб. – 500 руб.</label>
             <input type="range" id="range-of-price" name="range-of-price">
+            </p>
 
-            <label for="fattiness">Жирность:</label>
-            <input type="radio" id="fattiness" name="zero" value="0%">0%
-            <input type="radio" id="fattiness" name="ten" value="10%">до 10%
-            <input type="radio" id="fattiness" name="thirty" value="30%">до 30%
-            <input type="radio" id="fattiness" name="mt thirty" value=">30%">выше 30%
-
-            <label for="fiiled">Наполнители:</label>
-            <input type="checkbox" id="filled" name="chocolate" checked>шоколадные
-            <input type="checkbox" id="filled" name="sugar" checked>сахарные присыпки
-            <input type="checkbox" id="filled" name="fruits">фрукты
-            <input type="checkbox" id="filled" name="syrup">сироп
-            <input type="checkbox" id="filled" name="jam">джемы
-
+            <p class="filter-fattiness">
+                <span>Жирность:</span>
+                <input type="radio" id="percent-1" name="percent" value="0%">
+                <label for="percent-1">0%</label>
+                <input type="radio" id="percent-2" name="percent" value="10%">
+                <label for="percent-2">до 10%</label>
+                <input type="radio" id="percent-3" name="percent" value="30%">
+                <label for="percent-3">до 30%</label>
+                <input type="radio" id="percent-4" name="percent" value=">30%">
+                <label for="percent-4">выше 30%</label>
+            </p>
+            <p class="">
+                <span>Наполнители:</span>
+                <input type="checkbox" id="filled-1" name="chocolate" checked>
+                <label for="filled-1">шоколадные</label>
+                <input type="checkbox" id="filled-2" name="sugar" checked>
+                <label for="filled-2">сахарные присыпки</label>
+                <input type="checkbox" id="filled-3" name="fruits">
+                <label for="filled-3">фрукты</label>
+                <input type="checkbox" id="filled-4" name="syrup">
+                <label for="filled-4">сироп</label>
+                <input type="checkbox" id="filled-5" name="jam">
+                <label for="filled-5">джемы</label>
+            </p>
             <input type="submit" name="sent-filter" value="Применить" >
         </section>
                         <!--TEST SECTION ending -->
