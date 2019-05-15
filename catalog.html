@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
       <header class="main-header">
@@ -64,7 +66,33 @@
             <li><a href="#">Сливочное</a></li>
         </ul>
         <h1>Сливочное мороженное</h1>
-        <!--Здесь будет форма с фильтрами-->
+                    <!--Здесь будет форма с фильтрами-->
+        <section>
+
+            <label for="sort">Сортировка:</label>
+            <select id="sort">
+                <option selected>по популярности</option>
+            </select>
+
+            <labe; for="range-of-price">Цена: 100 руб. – 500 руб.</label>
+            <input type="range" id="range-of-price" name="range-of-price">
+
+            <label for="fattiness">Жирность:</label>
+            <input type="radio" id="fattiness" name="zero" value="0%">0%
+            <input type="radio" id="fattiness" name="ten" value="10%">до 10%
+            <input type="radio" id="fattiness" name="thirty" value="30%">до 30%
+            <input type="radio" id="fattiness" name="mt thirty" value=">30%">выше 30%
+
+            <label for="fiiled">Наполнители:</label>
+            <input type="checkbox" id="filled" name="chocolate" checked>шоколадные
+            <input type="checkbox" id="filled" name="sugar" checked>сахарные присыпки
+            <input type="checkbox" id="filled" name="fruits">фрукты
+            <input type="checkbox" id="filled" name="syrup">сироп
+            <input type="checkbox" id="filled" name="jam">джемы
+
+            <input type="submit" name="sent-filter" value="Применить" >
+        </section>
+                        <!--TEST SECTION ending -->
         <section class="catalog">
             <ul class="catalog-items">
                 <li>

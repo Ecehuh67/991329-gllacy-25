@@ -1,9 +1,46 @@
+.hower-catalog,
+.search-buttom,
+.hower-personal-cabinet {
+    display: none;
+}
 body {
     width: 1250px;
     height: 2500px;
 
     font-family: 'Roboto', sans-serif;
     background: #849d8f;
+}
+
+header {
+    display: flex;
+}
+nav{
+    display:flex;
+}
+.cite-navigation {
+    display: flex;
+    list-style-type: none;
+}
+.main-promo{
+    display: flex;
+}
+
+.main-promo-raspberry{
+    border: 1px solid black;
+    color: white;
+    background: url("../img/promo-1.jpg") no-repeat;
+}
+
+.main-promo-chocolate{
+    border: 1px solid black;
+    color: white;
+    background: url("../img/promo-2.jpg") no-repeat;
+}
+
+.main-hit-seller-items {
+    display: flex;
+
+    list-style-type: none;
 }
 
 h1 {
@@ -20,15 +57,14 @@ h1 {
     padding: 5px;
 
     border: 1px solid black;
-    background: url("img/waffle-pattern.jpg");
+    background: url("../img/waffle-pattern.jpg");
 
 }
 
 
 .main-description-advantages li::before {
     content: : '';
-    background: url("img/ice-cream.cvg");
-    display: block;
+    background: url("../img/ice-cream.cvg");
     width: 50px;
     height: 50px;
 }
@@ -49,7 +85,67 @@ h1 {
     height: 115px;
 }
 
+.main-description-advantages li:first-child::before {
+    content: " ";
+    background: url("../img/ice-cream.svg") no-repeat;
+    background-size: 40px;
+    position: absolute;
+    left: 15px;
+
+}
+.main-description-advantages li:nth-child(2)::before {
+    content: " ";
+    background: url("../img/caw.svg") no-repeat;
+    background-size: 40px;
+    position: absolute;
+    left: 605px;
+
+}
+
+.main-description-advantages li:nth-child(3)::before {
+    content: " ";
+    background: url("../img/leaf.svg") no-repeat;
+    background-size: 40px;
+    position: absolute;
+    left: 15px;
+    bottom:: 130px;
+}
+.main-description-advantages li:nth-child(4)::before {
+    content: " ";
+    background: url("../img/leaf.svg") no-repeat;
+    background-size: 40px;
+    position: absolute;
+    left: 605px;
+    bottom:: 130px;
+}
+
+
+.recipe {
+    width: 550px;
+    height: 220px;
+    margin-top:30px;
+
+    background: url("../img/strawberry.jpg")no-repeat;
+}
+
+.subscribe {
+    width: 550px;
+    height: 220px;
+    margin-top:30px;
+    background: url("../img/subscribe-form.png") no-repeat;
+}
+
 .html-academy-logo {
-    width: 108px;
-    height: 39px;
+    width: 110px;
+    height: 40px;
+}
+
+.footer-social ul{
+    display:flex;
+}
+
+.footer-social ul li:first-child {
+    width: 110px;
+    height: 110px;
+    background: url("../img/twitter-icon.svg") no-repeat;
 }
