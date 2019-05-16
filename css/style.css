@@ -1,4 +1,4 @@
-.hower-catalog,
+
 .search-buttom,
 .hower-personal-cabinet {
     display: none;
@@ -10,6 +10,13 @@ body {
     font-family: 'Roboto', sans-serif;
     background: #849d8f;
 }
+/*.hower-items {
+    display:none;
+}
+.catalog-menu a:hover ul {
+    display: block;
+    position: relative;
+}*/
 
 header {
     display: flex;
