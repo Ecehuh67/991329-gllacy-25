@@ -81,6 +81,7 @@ h1 {
 
 .main-description-advantages {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 
     list-style-type: none;
