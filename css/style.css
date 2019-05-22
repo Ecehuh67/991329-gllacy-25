@@ -1,158 +1,124 @@
-/*
-.search-buttom,
-.hower-personal-cabinet {
-    display: none;
-}*/
 body {
-    width: 1250px;
-    height: 2500px;
+    margin: 0;
+    padding: 0;
 
-    font-family: 'Roboto', sans-serif;
-    background: #849d8f;
+    font-family: 'Roboto', 'Arial' sans-serif;
+    font-size: 16px;
+    line-weight: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: none;
+
+    background-color: #849d8f;
 }
-/*.hower-items {
-    display:none;
+
+a {
+    text-decoration: none;
 }
-.catalog-menu a:hover ul {
-    display: block;
+
+.main-logo {
     position: relative;
-}*/
+    left: 27px;
+    top: 9px;
 
-header {
-    display: flex;
-}
-nav{
-    display:flex;
-}
-.cite-navigation {
-    display: flex;
-    list-style-type: none;
-}
-.main-promo{
-    display: flex;
+    width: 154px;
+    height: 64px;
+
 }
 
-.main-promo-raspberry{
-    border: 1px solid black;
-    color: white;
-    background: url("../img/promo-1.jpg") no-repeat;
+.main-navigation {
+    font-size: 16px;
+    font-weight: 700;
+    line-weight: 30px;
+    color: #ffffff;
+
+    background-color: #849d8f;
 }
 
-.main-promo-chocolate{
-    border: 1px solid black;
-    color: white;
-    background: url("../img/promo-2.jpg") no-repeat;
+.cite-navigation,
+.hower-items {
+    list-style: none;
 }
 
-.main-hit-seller-items {
-    display: flex;
+.hower-items li:not(:first-child) {
+    font-size: 14px;
+    line-weight: 16px;
+    font-weight: 400;
+    color: #333333;
 
-    list-style-type: none;
+    background-color: #849d8f;
+}
+.hower-items li:first-child {
+    font-size: 14px;
+    line-weight: 16px;
+    font-weight: 700;
+    color: #333333;
+
+    border-bottom: 1px solid #333333;
+    background-color: #849d8f;
+
 }
 
-h1 {
+.main-user-fields{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #ffffff;
 
-    font-size: 24px;
-    line-height: 30px;
+    background-color: #849d8f;
+}
+
+.main-work-time {
+    font-size: 14px;
+    line-weight: 16px;
+    font-weight: 700;
+    color: #ffffff;
+
+    background-color: #849d8f;
+}
+
+.phone-number {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+
+    background-color: #849d8f;
+}
+
+.cite-navigation a,
+.main-user-fields a {
+    color: #ffffff;
+}
+.hower-items a{
+    color:#333333;
+}
+
+.cite-navigation a:hover,
+.cite-navigation a:focus,
+.main-user-fields a:hover,
+.main-user-fields a:hover {
+    color: #333333;
+    background-color: #ffffff;
 }
 
 .main-description {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #333333;
 
-    width: 1180px;
-    height: 315px;
-
-    padding: 5px;
-
-    border: 1px solid black;
-    background: url("../img/waffle-pattern.jpg");
-
+    background-color: #849d8f;
+    background-image: url("../img/waffle-pattern.jpg");
 }
 
-
-.main-description-advantages li::before {
-    content: : '';
-    background: url("../img/ice-cream.cvg");
-    width: 50px;
-    height: 50px;
+.main-description h1{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #333333;
 }
 
 .main-description-advantages {
-    display: flex;
-    flex-wrap: wrap;
-
-    list-style-type: none;
-
-    font-size: 16px;
-    line-height: 22px;
-
-}
-
-.main-description-advantages li {
-    width: 570px;
-    height: 115px;
-}
-
-.main-description-advantages li:first-child::before {
-    content: " ";
-    background: url("../img/ice-cream.svg") no-repeat;
-    background-size: 40px;
-    position: absolute;
-    left: 15px;
-
-}
-.main-description-advantages li:nth-child(2)::before {
-    content: " ";
-    background: url("../img/caw.svg") no-repeat;
-    background-size: 40px;
-    position: absolute;
-    left: 605px;
-
-}
-
-.main-description-advantages li:nth-child(3)::before {
-    content: " ";
-    background: url("../img/leaf.svg") no-repeat;
-    background-size: 40px;
-    position: absolute;
-    left: 15px;
-    bottom:: 130px;
-}
-.main-description-advantages li:nth-child(4)::before {
-    content: " ";
-    background: url("../img/leaf.svg") no-repeat;
-    background-size: 40px;
-    position: absolute;
-    left: 605px;
-    bottom:: 130px;
-}
-
-
-.recipe {
-    width: 550px;
-    height: 220px;
-    margin-top:30px;
-
-    background: url("../img/strawberry.jpg")no-repeat;
-}
-
-.subscribe {
-    width: 550px;
-    height: 220px;
-    margin-top:30px;
-    background: url("../img/subscribe-form.png") no-repeat;
-}
-
-.html-academy-logo {
-    width: 110px;
-    height: 40px;
-}
-
-.footer-social ul{
-    display:flex;
-}
-
-.footer-social ul li:first-child {
-    width: 110px;
-    height: 110px;
-    background: url("../img/twitter-icon.svg") no-repeat;
+    list-style: none;
 }
