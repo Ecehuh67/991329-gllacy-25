@@ -185,13 +185,13 @@
         <form class="subscribe">
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
             <input type="email" name="email" placeholder="Электронная почта">
-            <button type="submit" name="send-email">Отправить</button>
+            <button class="button" type="submit" name="send-email">Отправить</button>
         </form>
         <!--Здесь будет карта проезда-->
         <!--Плашка адреса-->
-        <section>
-            <h2 class="visually-hidden">Адрес главного офиса и офлайн-магазина:</h2>
-            <p>
+        <section class="contacts">
+            <h2 >Адрес главного офиса и офлайн-магазина:</h2>
+            <p class="adress">
                 ул. Большая Конюшенная<br>
                  19/8, Санкт-Петербург
             </p>
@@ -201,6 +201,32 @@
                 <span class="contact-number">8 812 450-25-25</span><br>
                 <span class="available-time">(с 10 до 20 ежедневно)</span>
             </p>
+            <a href="#">Форма обратной связи</a>
+                <!--Обратная связь-->
+                <div class="comments">
+                    <form action="https://echo.htmlacademy.ru" class="feedback" method="post">
+                        <h2 class="visually-hidden">Обратная связь</h2>
+                        <p>Мы обязательно вам ответим!</p>
+                        <ul class="comments-fields">
+                            <li>
+                                <label class="visually-hidden">Ваше имя
+                                <input type="text" name="first-name" placeholder="Как вас зовут?">
+                                </label>
+                            </li>
+                            <li>
+                                <label class="visually-hidden">Электронная почта
+                                <input type="text" name="email-for-call" placeholder="Ваша почта для ответа">
+                                </label>
+                            </li>
+                            <li>
+                                <label class="visually-hidden">Ваш вопрос
+                                <textarea placeholder="Напишите что-нибудь..."></textarea>
+                                </label>
+                            </li>
+                        </ul>
+                        <span class="modal-close">x</span>
+                    </form>
+                </div>
         </section>
     </main>
     <footer class="main-footer">
@@ -234,8 +260,8 @@
         </div>
     </footer>
     <!--Обратная связь-->
-    <section class="comments">
-        <form action="#" class="feedback" method="post">
+    <div class="comments">
+        <form action="https://echo.htmlacademy.ru" class="feedback" method="post">
             <h2 class="visually-hidden">Обратная связь</h2>
             <p>Мы обязательно вам ответим!</p>
             <ul class="comments-fields">
@@ -257,6 +283,6 @@
             </ul>
             <span class="modal-close">x</span>
         </form>
-    </section>
+    </div>
   </body>
 </html>

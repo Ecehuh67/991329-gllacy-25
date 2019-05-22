@@ -16,6 +16,11 @@ a {
     text-decoration: none;
 }
 
+.button:hover,
+.button:focus {
+    background-color: #ff9966;
+}
+
 .main-logo {
     position: relative;
     left: 27px;
@@ -121,4 +126,84 @@ a {
 
 .main-description-advantages {
     list-style: none;
+}
+
+.recipe span{
+    font-size: 16px;
+    line-weight: 22px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.recipe {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #333333;
+    text-decoration: underline;
+
+    background-color: #849d8f;
+    background-image: url("../img/strawberry.jpg");
+}
+
+.recipe a {
+    color:inherit;
+}
+
+.subscribe {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #333333;
+
+    background-color: #849d8f;
+    background-image: url("../img/subscribe-form.png");
+}
+
+.button {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+
+    background-color: #ff6633;
+    border: none;
+    border-radius: 10px;
+}
+
+.contacts {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+
+    background-color: #ffffff;
+}
+
+.contacts h2 {
+    font: inherit;
+    color: inherit;
+}
+
+.contacts a {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+
+    background-color: #ff6633;
+    border-radius: 10px;
+}
+
+.contacts a:hover,
+.contacts a:focus {
+    background-color: #ff9966;
+}
+
+.adress,
+.contact-number {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: inherit;
 }
