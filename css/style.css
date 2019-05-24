@@ -1,6 +1,17 @@
+ .hower-items,
+.search-buttom,
+.hower-personal-cabinet,
+.basket-of-purches,
+.contacts {
+      display:none;
+  }
+
 body {
     margin: 0;
     padding: 0;
+
+    min-width: 1200px;
+    min-height: 2416px;
 
     font-family: 'Roboto', 'Arial' sans-serif;
     font-size: 16px;
@@ -33,23 +44,52 @@ input[type="text"]:focus{
     border: 1px solid #99ccff;
 }
 
-.main-logo {
-    position: relative;
-    left: 27px;
-    top: 9px;
+.main-header {
+    margin: 0 auto;
+    margin-top: 10px;
 
+    width: 1200px;
+}
+
+.main-logo {
+    padding: 0;
     width: 154px;
     height: 64px;
-
 }
 
 .main-navigation {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 27px;
+
+    width: 1146px;
+
     font-size: 16px;
     font-weight: 700;
     line-weight: 30px;
     color: #ffffff;
 
     background-color: #849d8f;
+}
+
+.main-wrapper {
+    display: flex;
+    width: 560px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.cite-navigation {
+    margin: 0;
+    padding: 0;
+}
+
+.main-user-fields {
+    width: 267px;
 }
 
 .cite-navigation,
@@ -84,10 +124,13 @@ input[type="text"]:focus{
     font-weight: 500;
     color: #ffffff;
 
-    background-color: #849d8f;
 }
 
 .main-work-time {
+    order: 1;
+
+    width: 166px;
+
     font-size: 14px;
     line-weight: 16px;
     font-weight: 700;
@@ -129,6 +172,16 @@ input[type="text"]:focus{
     background-color: #ffcc99;
 }
 
+.titile-container {
+    display: flex;
+
+    margin: 0 27px;
+}
+
+.main-promo-slider {
+    width: 980px;
+}
+
 .main-slider p{
     font-size: 60px;
     line-height: 60.35px;
@@ -159,6 +212,13 @@ input[type="text"]:focus{
 }
 
 .main-promo {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 27px;
+    margin-bottom: 40px;
+
+    width: 1146px;
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
@@ -176,11 +236,13 @@ input[type="text"]:focus{
 }
 
 .main-promo-raspberry {
+    width: 560px;
     background-image: url("../img/promo-1.jpg");
     background-repeat: no-repeat;
 }
 
 .main-promo-chocolate {
+    width: 560px;
     background-image: url("../img/promo-2.jpg");
     background-repeat: no-repeat;
 }
@@ -204,20 +266,40 @@ input[type="text"]:focus{
 }
 
 .main-hit-seller-items {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 27px;
+    padding: 0px;
+
+    width: 1146px;
     list-style: none;
 }
 
+.main-hit-seller-items li{
+    width: 267px;
+}
+
 .main-description {
+    margin: 0 27px;
+    margin-bottom: 40px;
+
+    width: 1146px;
+    min-height: 305px;
+
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
     color: #333333;
 
-    background-color: #849d8f;
     background-image: url("../img/waffle-pattern.jpg");
 }
 
 .main-description h1{
+
+    padding-left: 18px;
+    padding-right: 113px;
+
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -225,7 +307,71 @@ input[type="text"]:focus{
 }
 
 .main-description-advantages {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+    margin-left: 70px;
+
     list-style: none;
+}
+
+.main-description-advantages li{
+    width: 485px;
+
+}
+.main-description-advantages li:nth-child(even){
+    margin-left: 86px;
+    margin-right: auto;
+
+}
+
+
+.main-description-advantages li:nth-child(1)::before {
+    content: " ";
+    background-image: url("../img/ice-cream.svg");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    position: absolute;
+}
+
+.main-description-advantages li:nth-child(2)::before {
+    content: " ";
+    background-image: : url("../img/caw.svg");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    position: absolute;
+    left: 605px;
+
+}
+
+.main-description-advantages li:nth-child(3)::before {
+    content: " ";
+    background-image: : url("../img/leaf.svg");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    position: absolute;
+    left: 15px;
+    bottom:: 130px;
+}
+.main-description-advantages li:nth-child(4)::before {
+    content: " ";
+    background-image: : url("../img/thermometr.svg");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    position: absolute;
+    left: 605px;
+    bottom:: 130px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 27px;
+    margin-bottom: 40px;
 }
 
 .recipe span{
@@ -236,13 +382,14 @@ input[type="text"]:focus{
 }
 
 .recipe {
+    width: 560px;
+    height: 220px;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
     color: #333333;
     text-decoration: underline;
 
-    background-color: #849d8f;
     background-image: url("../img/strawberry.jpg");
     background-repeat: no-repeat;
 }
@@ -252,6 +399,9 @@ input[type="text"]:focus{
 }
 
 .subscribe {
+    width: 560px;
+    height: 220px;
+
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
@@ -330,12 +480,22 @@ input[type="text"]:focus{
 }
 
 .main-footer {
+    margin-top: 0;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
     color: #ffffff;
 
     background-color: #849d8f;
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 27px;
+
+    width: 1146px;
 }
 
 .main-footer ul {
@@ -494,3 +654,22 @@ input[type="text"]:focus{
 .catalog-items:hover {
     background-color: #9bafa3;
 }
+
+ /*Temporary*/
+/*
+body > * {
+    background-color: rgba(255, 120, 0, 0.5);
+}
+
+body > * >* {
+    background-color: rgba(255, 020, 0, 0.5);
+}
+
+body > * > * > * {
+    background-color: rgba(20, 0, 100, 0.5);
+}
+
+body > * > * > * > *{
+    background-color: rgba(0, 0, 00, 0.5);
+}
+*/
