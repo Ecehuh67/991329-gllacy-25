@@ -481,6 +481,7 @@ input[type="text"]:focus{
 
 .main-footer {
     margin-top: 0;
+    width: 1200px;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -493,7 +494,7 @@ input[type="text"]:focus{
     display: flex;
     justify-content: space-between;
 
-    margin: 0 27px;
+    padding: : 0 27px;
 
     width: 1146px;
 }
