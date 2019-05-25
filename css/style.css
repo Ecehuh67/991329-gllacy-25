@@ -58,9 +58,8 @@ input[type="text"]:focus{
 }
 
 .main-logo {
+    margin-right: 23px;
     padding: 0;
-    width: 154px;
-    height: 64px;
 }
 
 .main-navigation {
@@ -81,16 +80,27 @@ input[type="text"]:focus{
 
 .main-wrapper {
     display: flex;
+    justify-content: flex-start;
     width: 560px;
 }
 
 .cite-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
+    width: 383px;
 }
 
 .main-user-fields {
+    display: flex;
+    justify-content: space-between;
     width: 267px;
+}
+
+.button-search {
+    margin-left: 23px;
 }
 
 .cite-navigation,
@@ -218,6 +228,8 @@ input[type="text"]:focus{
 .slaider {
     display: flex;
     align-self: flex-start;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -346,7 +358,7 @@ input[type="text"]:focus{
     content: " ";
     width: 50px;
     height: 50px;
-    background-image: url("../img/ice-cream.svg");
+    background-image: url("../img/ice-crea.svg");
     background-repeat: no-repeat;
     position: absolute;
     left: 160px;
@@ -358,7 +370,7 @@ input[type="text"]:focus{
     content: " ";
     width: 50px;
     height: 50px;
-    background-image: url("../img/caw.svg");
+    background-image: url("../img/ca.svg");
     background-repeat: no-repeat;
     position: absolute;
     left: 720px;
@@ -370,7 +382,7 @@ input[type="text"]:focus{
     content: " ";
     width: 50px;
     height: 50px;
-    background-image: url("../img/thermometr.svg");
+    background-image: url("../img/thermomet.svg");
     background-repeat: no-repeat;
     position: absolute;
     left: 720px;
@@ -380,7 +392,7 @@ input[type="text"]:focus{
     content: " ";
     width: 50px;
     height: 50px;
-    background-image: url("../img/leaf.svg");
+    background-image: url("../img/lea.svg");
     background-repeat: no-repeat;
     position: absolute;
     left: 160px;
@@ -511,6 +523,7 @@ input[type="text"]:focus{
 .footer-wrapper{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     margin: 0 27px;
 
@@ -520,36 +533,34 @@ input[type="text"]:focus{
 .main-footer ul {
     display: flex;
 
+    margin: 0;
+    padding: 0;
+
     width: 190px;
-    height: 40px;
 
     list-style: none;
 }
 
 .footer-social li:first-child {
     width: 110px;
-    height: 110px;
 
     background: url("../img/twitter-icon.svg") no-repeat;
 }
 
 .footer-social li:nth-child(2) {
     width: 110px;
-    height: 110px;
 
     background: url("../img/insta-icon.svg") no-repeat;
 }
 
 .footer-social li:nth-child(3) {
     width: 110px;
-    height: 110px;
 
     background: url("../img/fb-icon.svg") no-repeat;
 }
 
 .footer-social li:nth-child(4) {
     width: 110px;
-    height: 110px;
 
     background: url("../img/vk-icon.svg") no-repeat;
 }
@@ -586,7 +597,15 @@ input[type="text"]:focus{
     border-bottom: 1px solid #ffffff;
 }
 
+.main-wrapper-out {
+    margin: 0 27px;
+}
+
 .breadcrumbs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: 26px;
     list-style: none;
 }
 
@@ -600,6 +619,9 @@ input[type="text"]:focus{
 }
 
 .catalog-filters {
+    display: flex;
+    flex-wrap: wrap;
+    width: 949px;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
@@ -629,6 +651,10 @@ input[type="text"]:focus{
     background-color: #eaeaea;
 }
 
+.catalog {
+    margin: 0 27px;
+    padding: 0;
+}
 .catalog h2{
     font-size: 16px;
     line-height: 22px;
@@ -652,14 +678,19 @@ input[type="text"]:focus{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 27px;
-    width: 1146px;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 .catalog-items li{
-    
+    width: 267px;
     text-align: center;
+}
+
+.pagination-list {
+    display:flex;
+    justify-content: flex-end;
 }
 
 .pagination-list a{
@@ -672,6 +703,8 @@ input[type="text"]:focus{
 }
 
 .pagination-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
