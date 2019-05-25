@@ -27,6 +27,15 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden{
+    display: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .button:hover,
 .button:focus {
     background-color: #ff9966;
@@ -45,10 +54,7 @@ input[type="text"]:focus{
 }
 
 .main-header {
-    margin: 0 auto;
     margin-top: 10px;
-
-    width: 1200px;
 }
 
 .main-logo {
@@ -76,11 +82,6 @@ input[type="text"]:focus{
 .main-wrapper {
     display: flex;
     width: 560px;
-}
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
 }
 
 .cite-navigation {
@@ -127,8 +128,9 @@ input[type="text"]:focus{
 }
 
 .main-work-time {
-    order: 1;
-
+    position: absolute;
+    left: 1275px;
+    margin: 0;
     width: 166px;
 
     font-size: 14px;
@@ -172,24 +174,29 @@ input[type="text"]:focus{
     background-color: #ffcc99;
 }
 
-.titile-container {
-    display: flex;
-
-    margin: 0 27px;
+.main-promo-slider {
+    width: 1146px;
 }
 
-.main-promo-slider {
-    width: 980px;
+.main-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-slider p{
+    margin-top: -500px;
+    width: 670px;
     font-size: 60px;
     line-height: 60.35px;
     font-weight: 700;
     color: #ffffff;
+    text-align: center;
 }
 
 .button-promo {
+    margin-top: -20px;
+    width: 202px;
     font-size: 32px;
     line-height: 44px;
     font-weight: 700;
@@ -197,6 +204,7 @@ input[type="text"]:focus{
 
     background-color: #ff6633;
     border-radius: 10px;
+    text-align: center;
 }
 
 .button-promo:hover {
@@ -208,6 +216,8 @@ input[type="text"]:focus{
 }
 
 .slaider {
+    display: flex;
+    align-self: flex-start;
     list-style: none;
 }
 
@@ -215,7 +225,9 @@ input[type="text"]:focus{
     display: flex;
     justify-content: space-between;
 
-    margin: 0 27px;
+    margin-left: 27px;
+    margin-right: 27px;
+    margin-top: 10px;
     margin-bottom: 40px;
 
     width: 1146px;
@@ -278,6 +290,7 @@ input[type="text"]:focus{
 
 .main-hit-seller-items li{
     width: 267px;
+    text-align: center;
 }
 
 .main-description {
@@ -313,7 +326,13 @@ input[type="text"]:focus{
 
     margin: 0;
     padding: 0;
-    margin-left: 70px;
+    margin-left: 73px;
+    margin-right: 30px;
+
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #333333;
 
     list-style: none;
 }
@@ -322,48 +341,50 @@ input[type="text"]:focus{
     width: 485px;
 
 }
-.main-description-advantages li:nth-child(even){
-    margin-left: 86px;
-    margin-right: auto;
-
-}
-
 
 .main-description-advantages li:nth-child(1)::before {
     content: " ";
+    width: 50px;
+    height: 50px;
     background-image: url("../img/ice-cream.svg");
     background-repeat: no-repeat;
-    background-size: 50px;
     position: absolute;
+    left: 160px;
+    top: 1598px;
+
 }
 
 .main-description-advantages li:nth-child(2)::before {
     content: " ";
-    background-image: : url("../img/caw.svg");
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/caw.svg");
     background-repeat: no-repeat;
-    background-size: 50px;
     position: absolute;
-    left: 605px;
+    left: 720px;
+    top: 2145px;
 
 }
 
 .main-description-advantages li:nth-child(3)::before {
     content: " ";
-    background-image: : url("../img/leaf.svg");
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/thermometr.svg");
     background-repeat: no-repeat;
-    background-size: 50px;
     position: absolute;
-    left: 15px;
-    bottom:: 130px;
+    left: 720px;
+    top: 2240px;
 }
 .main-description-advantages li:nth-child(4)::before {
     content: " ";
-    background-image: : url("../img/thermometr.svg");
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/leaf.svg");
     background-repeat: no-repeat;
-    background-size: 40px;
     position: absolute;
-    left: 605px;
-    bottom:: 130px;
+    left: 160px;
+    top: 2240px;
 }
 
 .wrapper {
@@ -383,7 +404,6 @@ input[type="text"]:focus{
 
 .recipe {
     width: 560px;
-    height: 220px;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -400,7 +420,6 @@ input[type="text"]:focus{
 
 .subscribe {
     width: 560px;
-    height: 220px;
 
     font-size: 16px;
     line-height: 22px;
@@ -480,9 +499,6 @@ input[type="text"]:focus{
 }
 
 .main-footer {
-    margin-top: 0;
-
-    width: 1200px;
 
     font-size: 13px;
     line-height: 18px;
@@ -496,7 +512,7 @@ input[type="text"]:focus{
     display: flex;
     justify-content: space-between;
 
-    padding: : 0 27px;
+    margin: 0 27px;
 
     width: 1146px;
 }
@@ -557,6 +573,8 @@ input[type="text"]:focus{
 .footer-info a:first-of-type::before {
     content: " ";
     background-image: url("../img/heart-for-delivery-icon.svg");
+    width: 40px;
+    height: 40px;
     background-size: 40px;
 }
 
@@ -631,6 +649,10 @@ input[type="text"]:focus{
 }
 
 .catalog-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1146px;
     list-style: none;
 }
 
