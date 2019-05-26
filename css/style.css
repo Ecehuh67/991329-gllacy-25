@@ -1,4 +1,3 @@
-.hower-items,
 .search-buttom,
 .hower-personal-cabinet,
 .basket-of-purches,
@@ -82,6 +81,7 @@ input[type="text"]:focus{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     margin: 0;
     padding: 0;
     width: 383px;
@@ -102,8 +102,26 @@ input[type="text"]:focus{
     list-style: none;
 }
 
+.cite-navigation li:hover .hower-items{
+    display: block;
+}
+
 .hower-items {
+    display:none;
+    position: absolute;
+    z-index: 1;
+    left: -20px;
+    top: 40px;
+    padding: 0;
+    margin: 0;
+    width: 143px;
+    border-radius: 10px;
     background-color:  #ffffff;
+}
+
+ .hower-items a {
+    display: block;
+    padding: 12px 20px 15px 22px;
 }
 
 .hower-items li:not(:first-child) {
@@ -161,6 +179,7 @@ input[type="text"]:focus{
 .main-user-fields a {
     color: #ffffff;
 }
+
 .hower-items a{
     color:#333333;
 }
@@ -178,7 +197,12 @@ input[type="text"]:focus{
 }
 
 .points-of-catalog a:focus {
-    background-color: #ffcc99;
+    background-color: #f6b5a5;
+}
+
+.active-link a {
+    background-color: #d07058;
+    color: #ffffff;
 }
 
 .main-slider {
