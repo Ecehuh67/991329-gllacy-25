@@ -225,11 +225,12 @@ input[type="text"]:focus{
 }  <!--ПЕРЕДЕЛАТЬ НА СПИСОК-->
 
 
-.main-slider {
-    background-color: white;
+.main-promo-slider {
+    display: flex;
+    justify-content: center;
 }
 
-.main-promo-slide p{
+.main-promo-slider p{
     margin-top: -500px;
     width: 670px;
 
