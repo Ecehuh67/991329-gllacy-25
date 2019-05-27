@@ -227,7 +227,8 @@ input[type="text"]:focus{
 
 .main-promo-slider {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-promo-slider p{
