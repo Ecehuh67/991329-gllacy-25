@@ -27,7 +27,7 @@ a {
 }
 
 .container {
-    width: 1200px;
+    width: 1146px;
     margin: 0 auto;
     padding: 0 27px;
 }
@@ -153,7 +153,7 @@ input[type="text"]:focus{
 
 .main-work-time {
     position: absolute;
-    left: 1195px;
+    left: 1140px;
     margin: 0;
     width: 166px;
 
@@ -199,7 +199,7 @@ input[type="text"]:focus{
     background-color: #f6b5a5;
 }
 
-.active-link a {
+.active-link > a {
     background-color: #d07058;
     color: #ffffff;
 }
@@ -208,9 +208,10 @@ input[type="text"]:focus{
     position: relative;
 }
 
-.basket-of-purches {
+.basket-of-purches {      /* Переделдать на  UL*/
     display: none;
     position: absolute;
+    z-index: 1;
     top: 50px;
     left: -200px;
     width: 540px;
@@ -224,12 +225,15 @@ input[type="text"]:focus{
 }
 
 .main-promo-slider {
-     display: none;      /*  ВОТ ЗДЕСЬ   */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    margin-bottom: 40px;
 }
 
-.main-promo-slider p{
-    margin-top: -500px;
+.main-promo-slider p {
+    margin-top: -500px;  /*  -500*/
     width: 670px;
 
     font-size: 60px;
@@ -272,9 +276,7 @@ input[type="text"]:focus{
     display: flex;
     justify-content: space-between;
 
-    margin-top: 10px;
     margin-bottom: 40px;
-
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
@@ -294,6 +296,7 @@ input[type="text"]:focus{
 .main-promo-raspberry {
     width: 560px;
     background-image: url("../img/promo-1.jpg");
+    border-radius: 15px;
     background-repeat: no-repeat;
 }
 
@@ -301,6 +304,7 @@ input[type="text"]:focus{
     width: 560px;
     background-image: url("../img/promo-2.jpg");
     background-repeat: no-repeat;
+    border-radius: 15px;
 }
 
 .button-promo-1 {
@@ -330,9 +334,14 @@ input[type="text"]:focus{
     list-style: none;
 }
 
-.main-hit-seller-items li{
+.main-hit-seller-items li {
     width:267px;
+    border-radius: 150px;
     text-align: center;
+}
+
+.main-hit-seller-items img {
+    border-radius: 160px;
 }
 
 .main-description {
@@ -346,6 +355,7 @@ input[type="text"]:focus{
     color: #333333;
 
     background-image: url("../img/waffle-pattern.jpg");
+    border-radius: 15px;
 }
 
 .main-description h1 {
@@ -442,6 +452,7 @@ input[type="text"]:focus{
 
 .recipe {
     width: 560px;
+    min-height: 220px;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -450,6 +461,7 @@ input[type="text"]:focus{
 
     background-image: url("../img/strawberry.jpg");
     background-repeat: no-repeat;
+    border-radius: 15px;
 }
 
 .recipe a {
@@ -458,7 +470,7 @@ input[type="text"]:focus{
 
 .subscribe {
     width: 560px;
-
+    min-height: 220px;
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
@@ -711,6 +723,10 @@ input[type="text"]:focus{
     text-align: center;
 }
 
+.catalog-items img {
+    border-radius: 160px;
+}
+
 .pagination-list {
     display:flex;
     justify-content: flex-end;
@@ -743,7 +759,7 @@ input[type="text"]:focus{
 }
 
  /*Temporary*/
-
+/*
 body > * {
     background-color: rgba(255, 120, 0, 0.5);
 }
