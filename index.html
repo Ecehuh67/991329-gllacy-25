@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
-  </head>
-  <body>
-    <header class="main-header container">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Глейси</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+      </head>
+    <body>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="slider-wrapper">
+            <div class="container">
+    <header class="main-header">
         <nav class="main-navigation">
             <div class="main-wrapper">
                 <a href="#" class="main-logo">
@@ -31,13 +36,13 @@
                 </ul>
             </div>
             <div class="main-user-fields">
-                <a href="#" class="button-search">Поиск</a>
+                <a href="#" class="button-search"><span class="visually-hidden">Поиск</span></a>
                     <!--Поиск по каталогу-->
                     <div class="search-buttom">
                         <h2 class="visually-hidden">Поиск по каталогу</h2>
                         <input type="text" placeholder="Что ищем?">
                     </div>
-                <a href="#" class="button-enterance">Вход</a>
+                <a href="#" class="button-enterance"> <span class="visually-hidden">Вход</span></a>
                     <!--Форма Личного кабинета-->
                     <form action="#" class="hower-personal-cabinet" method="post">
                         <h2 class="visually-hidden">Личный кабинет</h2>
@@ -82,23 +87,32 @@
                     </form>
             </div>
         </nav>
-    </header>
-    <main class="container inner-page">
         <p class="main-work-time">
             С 10 до 20, ежедневно<br>
             <span class="phone-number">8 812 450-25-25</span>
         </p>
-        <section class="main-promo-slider">
+    </header>
+    <main>
+        <section class="slider">
             <h2 class="visually-hidden">Промо-акции</h2>
-            <a href="#">
-                <img src="img/slider-foto-1.png" alt="Крем-брюле и пломбир с малиновым джемом">
-            </a>
-            <p>Крем-брюле и пломбир с малиновым джемом</p>
-            <a href="" class="button-promo">Давайте оба!</a>
-            <ul class="slaider">
-                <li><input type="radio" checked> <!--будет переключатель--></li>
-                <li><input type="radio"> <!--будет переключатель--></li>
-                <li><input type="radio"> <!--будет переключатель--></li>
+            <div class="slider-controls">
+                <label for="product-1">Первый</label>
+                <label for="product-2">Второй</label>
+                <label for="product-3">Третий</label>
+            </div>
+            <ul class="slider-list">
+                <li class="slider-item slide" id="slide1">
+                    <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
+                    <a class="btn slide-button" href="#">Давайте оба!</a>
+                </li>
+                <li class="slider-item slide" id="slide2">
+                    <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
+                    <a class="btn slide-button" href="#">Давайте оба!</a>
+                </li>
+                <li class="slider-item slide" id="slide3">
+                    <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
+                    <a class="btn slide-button" href="#">Давайте оба!</a>
+                </li>
             </ul>
         </section>
         <section class="main-promo">
@@ -236,7 +250,7 @@
             <img src="img/map.svg" width="1200" height="429">
         </div>
     </main>
-    <footer class="main-footer container">
+    <footer class="main-footer">
         <div class="footer-wrapper">
             <div class="footer-social">
                 <ul>
@@ -270,5 +284,7 @@
             </div>
         </div>
     </footer>
+    </div>
+    </div>
   </body>
 </html>

@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
 
-    font-family: 'Roboto', 'Arial' sans-serif;
+    font-family: Roboto, "Arial", sans-serif;
     font-size: 16px;
     line-weight: 22px;
     font-weight: 400;
@@ -23,7 +23,12 @@ a {
 }
 
 .visually-hidden{
-    display: none;
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    clip: rect(0, 0, 0, 0);
 }
 
 .container {
@@ -50,7 +55,7 @@ input[type="text"]:focus{
 }
 
 .main-header {
-    margin-top: 10px;
+    padding-top: 9px;
 }
 
 .main-logo {
@@ -67,13 +72,12 @@ input[type="text"]:focus{
     line-weight: 30px;
     color: #ffffff;
 
-    background-color: #849d8f;
 }
 
 .main-wrapper {
     display: flex;
     justify-content: flex-start;
-    width: 560px;
+    width: 853px;
 }
 
 .cite-navigation {
@@ -91,9 +95,67 @@ input[type="text"]:focus{
     justify-content: space-between;
     width: 267px;
 }
-
 .button-search {
-    margin-left: 23px;
+    position: relative;
+}
+
+.button-search::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    right: -48px;
+
+    width: 17px;
+    height: 17px;
+
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+}
+
+.button-enterance {
+    position: relative;
+}
+.button-enterance::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -22px;
+
+    width: 21px;
+    height: 19px;
+
+    background-image: url("../img/enter.svg");
+    background-repeat: no-repeat;
+}
+.button-enterance::after {
+    content: "Вход";
+    position: absolute;
+    top: -5px;
+    left: 5px;
+
+    width: 21px;
+    height: 19px;
+
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+
+}
+
+.button-basket {
+    position: relative;
+}
+
+.button-basket::before {
+    content: "";
+    position: absolute;
+    left: -28px;
+
+    width: 21px;
+    height: 20px;
+
+    background-image: url("../img/basket.svg");
+    background-repeat: no-repeat;
 }
 
 .cite-navigation,
@@ -161,8 +223,6 @@ input[type="text"]:focus{
     line-weight: 16px;
     font-weight: 700;
     color: #ffffff;
-
-    background-color: #849d8f;
 }
 
 .phone-number {
@@ -170,8 +230,6 @@ input[type="text"]:focus{
     line-height: 24px;
     font-weight: 700;
     color: #ffffff;
-
-    background-color: #849d8f;
 }
 
 .cite-navigation a,
@@ -224,36 +282,141 @@ input[type="text"]:focus{
     display: block;
 }
 
-.main-promo-slider {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.slider-wrapper::before,
+.slider-wrapper::after {
+  content: "";
 
-    margin-bottom: 40px;
+  visibility: hidden;
 }
 
-.main-promo-slider p {
-    margin-top: -500px;  /*  -500*/
-    width: 670px;
-
-    font-size: 60px;
-    line-height: 60.35px;
-    font-weight: 700;
-    color: #ffffff;
-    text-align: center;
+.slider-wrapper::before {
+  background-image: url("../img/slider-foto-2.png");
 }
 
-.button-promo {
-    margin-top: -20px;
-    width: 202px;
-    font-size: 32px;
-    line-height: 44px;
-    font-weight: 700;
-    color: #ffffff;
+.slider-wrapper::after {
+  background-image: url("../img/slider-foto-3.png");
+}
 
-    background-color: #ff6633;
-    border-radius: 10px;
+.slider-wrapper {
+    min-width: 1146px;
+
+    background-color: #849d8f;
+    background-image: url("../img/slider-foto-1.png");
+    background-repeat: no-repeat;
+    background-position: top 84px center;
+
+    transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.slider {
+    position: relative;
+
+    padding-top: 321px;
+
     text-align: center;
+    color: #ffffff;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slide {
+    display: none;
+}
+
+.slide-title {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.btn{
+  display: inline-block;
+  padding: 12px 44px;
+
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 41px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: top;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.btn:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+#product-1:checked ~ .slider-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/slider-foto-1.png");
+}
+
+#product-2:checked ~ .slider-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/slider-foto-2.png");
+}
+
+#product-3:checked ~ .slider-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/slider-foto-3.png");
+}
+
+#product-1:checked ~ .slider-wrapper #slide1,
+#product-2:checked ~ .slider-wrapper #slide2,
+#product-3:checked ~ .slider-wrapper #slide3 {
+  display: block;
+}
+
+#product-1:checked ~ .slider-wrapper label[for="product-1"],
+#product-2:checked ~ .slider-wrapper label[for="product-2"],
+#product-3:checked ~ .slider-wrapper label[for="product-3"] {
+  background-color: #ffffff;
+}
+
+.slider-controls label {
+    display: inline-block;
+    margin-right: 8px;
+    width: 17px;
+    height: 17px;
+    vertical-align: top;
+
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 0;
+  z-index: 20;
+
+  font-size: 0;
 }
 
 .button-promo:hover {
@@ -264,6 +427,7 @@ input[type="text"]:focus{
     background-color: #cc3333;
 }
 
+/*
 .slaider {
     display: flex;
     align-self: flex-start;
@@ -271,6 +435,7 @@ input[type="text"]:focus{
     padding: 0;
     list-style: none;
 }
+*/
 
 .main-promo {
     display: flex;
@@ -281,8 +446,6 @@ input[type="text"]:focus{
     line-height: 22px;
     font-weight: 700;
     color: #ffffff;
-
-    background-color: #849d8f;
 }
 
 .main-promo h4{
@@ -476,7 +639,6 @@ input[type="text"]:focus{
     font-weight: 400;
     color: #333333;
 
-    background-color: #849d8f;
     background-image: url("../img/subscribe-form.png");
     background-repeat: no-repeat;
 }
@@ -554,8 +716,6 @@ input[type="text"]:focus{
     line-height: 18px;
     font-weight: 400;
     color: #ffffff;
-
-    background-color: #849d8f;
 }
 
 .footer-wrapper{
