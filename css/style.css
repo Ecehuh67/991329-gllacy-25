@@ -95,6 +95,48 @@ input[type="text"]:focus{
     justify-content: space-between;
     width: 267px;
 }
+
+.button-search {
+    padding: 10px;
+    width: 17px;
+    height: 17px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.button-search:hover path,
+.button-search:focus path{
+    fill: #323232;
+}
+
+.button-enterance {
+    padding: 5px 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+}
+
+.button-enterance:hover path,
+.button-enterance:focus path,
+.button-enterance:hover polygon,
+.button-enterance:focus polygon {
+    fill: #323232;
+}
+
+.button-basket {
+    padding: 5px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;;
+}
+
+.button-basket:hover path,
+.button-basket:focus path,
+.button-basket:hover circle,
+.button-basket:focus circle {
+    fill: #323232;
+}
+
+/*
 .button-search {
     position: relative;
 }
@@ -111,15 +153,25 @@ input[type="text"]:focus{
     background-image: url("../img/search.svg");
     background-repeat: no-repeat;
 }
-
+*/
+/*
 .button-enterance {
+    display: block;
     position: relative;
+
+
+    background-color: #9eb3a8;
+    border-radius: 15px;
 }
+*/
+
+/*
 .button-enterance::before {
     content: "";
     position: absolute;
-    top: -6px;
-    left: -22px;
+
+    left: 15px;
+    top: 8px;
 
     width: 21px;
     height: 19px;
@@ -127,20 +179,7 @@ input[type="text"]:focus{
     background-image: url("../img/enter.svg");
     background-repeat: no-repeat;
 }
-.button-enterance::after {
-    content: "Вход";
-    position: absolute;
-    top: -5px;
-    left: 5px;
 
-    width: 21px;
-    height: 19px;
-
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 500;
-
-}
 
 .button-basket {
     position: relative;
@@ -157,7 +196,7 @@ input[type="text"]:focus{
     background-image: url("../img/basket.svg");
     background-repeat: no-repeat;
 }
-
+*/
 .cite-navigation,
 .hower-items {
     list-style: none;
@@ -215,9 +254,9 @@ input[type="text"]:focus{
 
 .main-work-time {
     position: absolute;
-    left: 1140px;
+    left: 1180px;
     margin: 0;
-    width: 166px;
+    min-width: 167px;
 
     font-size: 14px;
     line-weight: 16px;
@@ -277,11 +316,11 @@ input[type="text"]:focus{
     background-color: #ffffff;
     color: black;
 }
-
+/*
 .main-user-fields:hover .basket-of-purches {
     display: block;
 }
-
+*/
 .slider-wrapper::before,
 .slider-wrapper::after {
   content: "";
@@ -397,6 +436,19 @@ input[type="text"]:focus{
   background-color: #ffffff;
 }
 
+.slider-wrapper label[for="product-1"]:hover,
+.slider-wrapper label[for="product-2"]:hover,
+.slider-wrapper label[for="product-3"]:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.slider-wrapper label[for="product-1"]:active,
+.slider-wrapper label[for="product-2"]:active,
+.slider-wrapper label[for="product-3"]:active {
+  background-color: #ffffff;
+}
+
+
 .slider-controls label {
     display: inline-block;
     margin-right: 8px;
@@ -419,6 +471,7 @@ input[type="text"]:focus{
   font-size: 0;
 }
 
+
 .button-promo:hover {
     background-color: #ff9966;
 }
@@ -426,6 +479,7 @@ input[type="text"]:focus{
 .button-promo:active {
     background-color: #cc3333;
 }
+
 
 /*
 .slaider {
@@ -480,13 +534,12 @@ input[type="text"]:focus{
     border-radius: 10px;
 }
 
-.button-promo-1:hover {
-    background-color: #ff9966;
+.button-promo-1 {
+    padding: 12px 44px;
+    border-radius: 50px;
 }
 
-.button-promo-1:active {
-    background-color: #cc3333;
-}
+
 
 .main-hit-seller-items {
     display: flex;
@@ -644,14 +697,12 @@ input[type="text"]:focus{
 }
 
 .button {
+    padding: 10 20px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
-    color: #ffffff;
 
-    background-color: #ff6633;
-    border: none;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .contacts {
