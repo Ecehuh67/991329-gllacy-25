@@ -1,4 +1,4 @@
-.search-buttom,
+
 .hower-personal-cabinet,
 .contacts {
       display:none;
@@ -88,25 +88,68 @@ input[type="text"]:focus{
     margin: 0;
     padding: 0;
     width: 383px;
+    border: 2px solid red;
+}
+.main-user-fields{
+    display: flex;
+    border: 2px solid black;
+}
+.main-user-fields ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
 }
 
-.main-user-fields {
+.user-fields-list {
     display: flex;
     justify-content: space-between;
-    width: 267px;
+    align-items: center;
+    position: relative;
+
+    min-width: 244px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    border: 2px solid green;
 }
 
-.button-search {
+.search-field {
     padding: 10px;
     width: 17px;
     height: 17px;
-
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
 }
 
-.button-search:hover path,
-.button-search:focus path{
+.search-buttom {
+    display: none;
+    position: absolute;
+    left: -311px;
+    top: 55px;
+}
+
+.search-wrapper {
+    padding: 20px 15px;
+
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.search-buttom input{
+    width: 311px;
+    min-height: 44px;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+}
+
+.user-fields-list li:hover .search-buttom {
+    display: block;
+}
+
+
+.search-field:hover path,
+.search-field:focus path{
     fill: #323232;
 }
 
@@ -241,17 +284,6 @@ input[type="text"]:focus{
 
 }
 
-.main-user-fields{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 500;
-    color: #ffffff;
-}
-
 .main-work-time {
     position: absolute;
     left: 1180px;
@@ -359,6 +391,7 @@ input[type="text"]:focus{
 .slider-list {
   margin: 0;
   padding: 0;
+  margin-bottom: 40px;
 
   list-style: none;
 }
@@ -471,7 +504,7 @@ input[type="text"]:focus{
   font-size: 0;
 }
 
-
+/*
 .button-promo:hover {
     background-color: #ff9966;
 }
@@ -479,7 +512,7 @@ input[type="text"]:focus{
 .button-promo:active {
     background-color: #cc3333;
 }
-
+*/
 
 /*
 .slaider {
@@ -512,16 +545,16 @@ input[type="text"]:focus{
 
 .main-promo-raspberry {
     width: 560px;
-    background-image: url("../img/promo-1.jpg");
-    border-radius: 15px;
+    background-image: url("../img/promo-1.png");
+    border-radius: 20px;
     background-repeat: no-repeat;
 }
 
 .main-promo-chocolate {
     width: 560px;
-    background-image: url("../img/promo-2.jpg");
+    background-image: url("../img/promo-2.png");
     background-repeat: no-repeat;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 .button-promo-1 {
