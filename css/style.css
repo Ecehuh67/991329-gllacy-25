@@ -298,18 +298,13 @@ input[type="text"]:focus{
     fill: #323232;
 }
 
-.hower-personal-cabinet {
-    font: inherit;
-    min-height: 214px;
-    background-color: green;
-}
-
 .enter-form {
     display: none;
     position: absolute;
-    width: 217px;
+    width: 277px;
     height: 214px;
     background-color: #f8f7f4;
+    padding: auto auto;
 }
 
 .user-fields-list li:hover .enter-form {
@@ -318,9 +313,26 @@ input[type="text"]:focus{
 
 .hower-personal-cabinet {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
+    padding: 19px 20px;
+}
+
+.personal-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fields-of-personal-cabinet input{
+    width: 240px;
+    height: 45px;
+}
+
+.fields-of-personal-cabinet {
+    width: 240px;
+    height: 172px;
 }
 
 .button-identification {
@@ -336,6 +348,11 @@ input[type="text"]:focus{
 .user-help {
     display: flex;
     flex-direction: column;
+}
+
+.user-help span a {
+    font: inherit;
+    color: black;
 }
 
 .button-enterance {
