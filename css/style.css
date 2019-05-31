@@ -1,9 +1,3 @@
-
-.hower-personal-cabinet,
-.contacts {
-      display:none;
-  }
-
 body {
     margin: 0;
     padding: 0;
@@ -152,6 +146,26 @@ input[type="text"]:focus{
 .search-field:focus path{
     fill: #323232;
 }
+
+.hower-personal-cabinet {
+    font: inherit;
+    min-height: 414px;
+    background-color: green;
+}
+
+.enter-form {
+    display: none;
+    position: absolute;
+    width: 277px;
+    height: 414px;
+    background-color: #f8f7f4;
+}
+
+.user-fields-list li:hover .enter-form {
+    display: block;
+}
+
+
 
 .button-enterance {
     padding: 5px 15px;
