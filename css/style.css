@@ -378,51 +378,7 @@ input[type="text"]:focus{
     border-radius: 20px;
     text-align: center;
 }
-/*
-.hower-personal-cabinet {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 19px 20px;
-}
 
-.personal-wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
-.fields-of-personal-cabinet input{
-    width: 240px;
-    height: 45px;
-}
-
-.fields-of-personal-cabinet {
-    width: 240px;
-    height: 172px;
-}
-
-.button-identification {
-    padding: 20px 26px;
-    width: 100px;
-    height: 44px;
-    font-size: 14px;
-    line-weight: 24px;
-    font-weight: 700;
-    border-radius: 20px;
-}
-
-.user-help {
-    display: flex;
-    flex-direction: column;
-}
-
-.user-help span a {
-    font: inherit;
-    color: black;
-}
-*/
 .button-enterance {
     padding: 5px 15px;
     background-color: rgba(255, 255, 255, 0.2);
@@ -464,49 +420,6 @@ input[type="text"]:focus{
     height: 17px;
 
     background-image: url("../img/search.svg");
-    background-repeat: no-repeat;
-}
-*/
-/*
-.button-enterance {
-    display: block;
-    position: relative;
-
-
-    background-color: #9eb3a8;
-    border-radius: 15px;
-}
-*/
-
-/*
-.button-enterance::before {
-    content: "";
-    position: absolute;
-
-    left: 15px;
-    top: 8px;
-
-    width: 21px;
-    height: 19px;
-
-    background-image: url("../img/enter.svg");
-    background-repeat: no-repeat;
-}
-
-
-.button-basket {
-    position: relative;
-}
-
-.button-basket::before {
-    content: "";
-    position: absolute;
-    left: -28px;
-
-    width: 21px;
-    height: 20px;
-
-    background-image: url("../img/basket.svg");
     background-repeat: no-repeat;
 }
 */
