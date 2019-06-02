@@ -4,7 +4,7 @@ body {
 
     font-family: Roboto, "Arial", sans-serif;
     font-size: 16px;
-    line-weight: 22px;
+    line-height: 22px;
     font-weight: 400;
     color: #ffffff;
     text-transform: none;
@@ -232,7 +232,7 @@ input[type="text"]:focus{
 
     font-size: 16px;
     font-weight: 700;
-    line-weight: 30px;
+    line-height: 30px;
     color: #ffffff;
 
 }
@@ -342,7 +342,7 @@ input[type="text"]:focus{
 .hower-personal-cabinet input{
     margin-bottom: 20px;
     width: 239px;
-    height: 45px;
+    min-height: 45px;
     border: 2px solid #d3d3d2;
     border-radius: 5px;
 }
@@ -372,7 +372,6 @@ input[type="text"]:focus{
     width: 100px;
     height: 44px;
     font-size: 18px;
-    line-weight: 24px;
     line-height: 0;
     font-weight: 700;
     border-radius: 20px;
@@ -394,6 +393,7 @@ input[type="text"]:focus{
 
 .button-basket {
     padding: 5px 20px;
+
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 30px;;
 }
@@ -405,24 +405,106 @@ input[type="text"]:focus{
     fill: #323232;
 }
 
-/*
-.button-search {
-    position: relative;
-}
-
-.button-search::before {
-    content: "";
+.basket-form {
+    display: none;
     position: absolute;
-    top: -13px;
-    right: -48px;
+    left: -295px;
+    top: 59px;
+    z-index: 1;
 
-    width: 17px;
-    height: 17px;
+    padding: 0 15px;
+    padding-bottom: 20px;
 
-    background-image: url("../img/search.svg");
-    background-repeat: no-repeat;
+    width: 510px;
+    min-height: 202px;
+
+    background-color: #f8f7f4;
+    border-radius: 10px;
+    color: #323232;
+
+    border: 2px solid green;
 }
-*/
+
+.basket-of-purches {
+    min-height: 242px;
+}
+
+.user-fields-list li:hover .basket-form {
+    display: block;
+}
+
+.basket-table {
+    margin-bottom: 15px;
+
+    width: 510px;
+    min-height: 130px;
+
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    border-bottom: 2px solid #cacac7;
+
+}
+
+.basket-table th:nth-of-type(1){
+    width: 12px;
+}
+
+.basket-table th:nth-of-type(2){
+    width: 33px;
+
+}
+
+.basket-table th:nth-of-type(3){
+    width: 214px;
+    min-height: 111px;
+
+    vertical-align: center;
+
+}
+
+.basket-table th:nth-of-type(4){
+    width: 93px;
+}
+
+.basket-table th:nth-of-type(5){
+    width: 47px;
+}
+
+.basket-price {
+    color: #a0a0a0;
+}
+
+.basket-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    min-height: 95px;
+}
+.total-basket {
+    margin-bottom: 16px;
+
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.button-order {
+    padding: 10px 15px;
+
+    width: 200px;
+    min-height: 44px;
+
+    font-size: 18px;
+    line-height: 24px;
+    line-height: 0;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
 .cite-navigation,
 .hower-items {
     list-style: none;
@@ -452,14 +534,14 @@ input[type="text"]:focus{
 
 .hower-items li:not(:first-child) {
     font-size: 14px;
-    line-weight: 16px;
+    line-height: 16px;
     font-weight: 400;
     color: #333333;
 
 }
 .hower-items li:first-child {
     font-size: 14px;
-    line-weight: 16px;
+    line-height: 16px;
     font-weight: 700;
     color: #333333;
 
@@ -503,44 +585,6 @@ input[type="text"]:focus{
     position: relative;
 }
 
-.basket-of-purches {      /* Переделдать на  UL*/
-    display: none;
-    position: absolute;
-    z-index: 1;
-    top: 50px;
-    left: -200px;
-    width: 540px;
-    min-height: 242px;
-    background-color: #ffffff;
-    color: black;
-}
-/*
-.main-user-fields:hover .basket-of-purches {
-    display: block;
-}
-*/
-
-
-/*
-.button-promo:hover {
-    background-color: #ff9966;
-}
-
-.button-promo:active {
-    background-color: #cc3333;
-}
-*/
-
-/*
-.slaider {
-    display: flex;
-    align-self: flex-start;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-*/
-
 .main-promo {
     display: flex;
     justify-content: space-between;
@@ -575,21 +619,16 @@ input[type="text"]:focus{
 }
 
 .button-promo-1 {
+    padding: 12px 44px;
+
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
     color: #ffffff;
 
     background-color: #ff6633;
-    border-radius: 10px;
-}
-
-.button-promo-1 {
-    padding: 12px 44px;
     border-radius: 50px;
 }
-
-
 
 .main-hit-seller-items {
     display: flex;
@@ -711,7 +750,7 @@ input[type="text"]:focus{
 
 .recipe span{
     font-size: 16px;
-    line-weight: 22px;
+    line-height: 22px;
     font-weight: 500;
     color: #333333;
 }
@@ -825,39 +864,23 @@ input[type="text"]:focus{
     align-items: center;
 }
 
-.main-footer ul {
+.social-items {
     display: flex;
 
     margin: 0;
     padding: 0;
-
-    width: 190px;
+    min-width: 267px;
 
     list-style: none;
 }
 
-.footer-social li:first-child {
-    width: 110px;
-
-    background: url("../img/twitter-icon.svg") no-repeat;
+.footer-social li {
+    margin-right: 11px;
+    opacity: 0.8;
 }
 
-.footer-social li:nth-child(2) {
-    width: 110px;
-
-    background: url("../img/insta-icon.svg") no-repeat;
-}
-
-.footer-social li:nth-child(3) {
-    width: 110px;
-
-    background: url("../img/fb-icon.svg") no-repeat;
-}
-
-.footer-social li:nth-child(4) {
-    width: 110px;
-
-    background: url("../img/vk-icon.svg") no-repeat;
+.footer-social li:hover {
+    opacity: 1;
 }
 
 .footer-info {
