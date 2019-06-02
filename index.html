@@ -80,23 +80,16 @@
                     <!--Форма Личного кабинета-->
                     <form action="#" class="hower-personal-cabinet" method="post">
                       <h2 class="visually-hidden">Личный кабинет</h2>
-                      <ul class="fields-of-personal-cabinet">
-                        <li>
-                          <label> <span class="visually-hidden">Электронная почта</span>
-                            <input type="text" name="email" placeholder="Электронная почта">
-                          </label>
-                        </li>
-                        <li>
-                          <label><span class="visually-hidden">Пароль</span>
-                            <input type="text" name="password" placeholder="Пароль">
-                          </label>
-                        </li>
-                      </ul>
+                          <label> <span class="visually-hidden" for="login-field">Электронная почта</label>
+                          <label class="visually-hidden" for="password-field">Пароль</label>
+                            <input type="text" name="email" placeholder="Электронная почта" id="login-field">
+                            <input type="text" name="password" placeholder="Пароль" id="password-field">
+
                       <div class="personal-wrapper">
                       <button class="btn button-identification" type="submit" name="come-in">Войти</button>
                       <p class="user-help">
-                        <span><a href="#">Забыли пароль?</a></span>
-                        <span><a href="#">Новая регистрация</a></span>
+                        <span class="guess"><a href="#">Забыли пароль?</a></span>
+                        <span class="guess"><a href="#">Новая регистрация</a></span>
                       </p>
                   </div>
                     </form>

@@ -31,6 +31,23 @@ a {
     padding: 0 27px;
 }
 
+.cite-navigation a,
+.main-user-fields a {
+    color: #ffffff;
+}
+
+.hower-items a{
+    color:#333333;
+}
+
+.cite-navigation a:hover,
+.cite-navigation a:focus,
+.main-user-fields a:hover,
+.main-user-fields a:focus {
+    color: #333333;
+    background-color: #ffffff;
+}
+
 .slider-wrapper::before,
 .slider-wrapper::after {
   content: "";
@@ -176,7 +193,8 @@ a {
 .slider-controls {
   position: absolute;
   bottom: 63px;
-  left: 0;
+  top: 487px;
+  left: 2px;
   z-index: 20;
 
   font-size: 0;
@@ -233,11 +251,9 @@ input[type="text"]:focus{
     margin: 0;
     padding: 0;
     width: 383px;
-    border: 2px solid red;
 }
 .main-user-fields{
     display: flex;
-    border: 2px solid black;
 }
 .main-user-fields ul {
     margin: 0px;
@@ -256,7 +272,6 @@ input[type="text"]:focus{
     line-height: 16px;
     font-weight: 500;
     color: #ffffff;
-    border: 2px solid green;
 }
 
 .search-field {
@@ -301,16 +316,69 @@ input[type="text"]:focus{
 .enter-form {
     display: none;
     position: absolute;
-    width: 277px;
+    top: 59px;
+    left: -145px;
+    width: 241px;
     height: 214px;
+    padding: 22px 18px;
     background-color: #f8f7f4;
-    padding: auto auto;
+
 }
 
 .user-fields-list li:hover .enter-form {
     display: block;
 }
 
+.hower-personal-cabinet {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 174px;
+}
+
+.hower-personal-cabinet input{
+    margin-bottom: 20px;
+    width: 239px;
+    height: 45px;
+    border: 2px solid #d3d3d2;
+    border-radius: 5px;
+}
+
+.personal-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 239px;
+}
+
+.guess a {
+    color: #323232;
+    text-decoration: underline;
+}
+
+.user-help {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button-identification {
+    padding: 20px 26px;
+    width: 100px;
+    height: 44px;
+    font-size: 18px;
+    line-weight: 24px;
+    line-height: 0;
+    font-weight: 700;
+    border-radius: 20px;
+    text-align: center;
+}
+/*
 .hower-personal-cabinet {
     display: flex;
     justify-content: space-between;
@@ -354,7 +422,7 @@ input[type="text"]:focus{
     font: inherit;
     color: black;
 }
-
+*/
 .button-enterance {
     padding: 5px 15px;
     background-color: rgba(255, 255, 255, 0.2);
@@ -503,23 +571,6 @@ input[type="text"]:focus{
     line-height: 24px;
     font-weight: 700;
     color: #ffffff;
-}
-
-.cite-navigation a,
-.main-user-fields a {
-    color: #ffffff;
-}
-
-.hower-items a{
-    color:#333333;
-}
-
-.cite-navigation a:hover,
-.cite-navigation a:focus,
-.main-user-fields a:hover,
-.main-user-fields a:focus {
-    color: #333333;
-    background-color: #ffffff;
 }
 
 .points-of-catalog a:hover {
