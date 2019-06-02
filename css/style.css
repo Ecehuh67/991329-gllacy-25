@@ -795,6 +795,14 @@ input[type="text"]:focus{
 }
 
 .contacts {
+    position: absolute;
+    top: 2146px; /* 1946*/
+    left: 871px;
+    padding: 31px 26px;
+
+    width: 250px;
+    min-height: 243px;
+
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
@@ -808,7 +816,8 @@ input[type="text"]:focus{
     color: inherit;
 }
 
-.contacts a {
+.feedback-link {
+    position: relative;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
@@ -816,14 +825,6 @@ input[type="text"]:focus{
 
     background-color: #ff6633;
     border-radius: 10px;
-}
-
-.contacts a:hover {
-    background-color: #ff9966;
-}
-
-.contacts a:focus {
-    background-color: #cc3333;
 }
 
 .adress,
@@ -835,12 +836,34 @@ input[type="text"]:focus{
 }
 
 .comments {
+    display: block;
+    position: absolute;
+
+    padding: 18px 16px 27px 23px;
+    top: 338px;
+    left: 363px;
+
+    width: 477px;
+    min-height: 442px;
+
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: #999999;
-
     background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.feedback-link:hover .comments {
+    display: block;
+}
+
+.comments-fields {
+    margin: 0;
+    padding: 0;
+
+
+    list-style: none;
 }
 
 .feedback p {

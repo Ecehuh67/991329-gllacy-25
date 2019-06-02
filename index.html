@@ -265,6 +265,9 @@
           <!--Здесь будет карта проезда-->
           <!--Плашка адреса-->
         </div>
+        <div class="main-map">
+          <img src="img/map.svg" width="1200" height="429">
+        </div>
         <section class="contacts">
           <h2>Адрес главного офиса и офлайн-магазина:</h2>
           <p class="adress">
@@ -277,7 +280,8 @@
             <span class="contact-number">8 812 450-25-25</span><br>
             <span class="available-time">(с 10 до 20 ежедневно)</span>
           </p>
-          <a href="#">Форма обратной связи</a>
+          <a class="btn feedback-link" href="#">Форма обратной связи</a>
+          </section>
           <!--Обратная связь-->
           <div class="comments">
             <form action="https://echo.htmlacademy.ru" class="feedback" method="post">
@@ -285,29 +289,22 @@
               <p>Мы обязательно вам ответим!</p>
               <ul class="comments-fields">
                 <li>
-                  <label class="visually-hidden">Ваше имя
+                  <label class="visually-hidden">Ваше имя</label>
                     <input type="text" name="first-name" placeholder="Как вас зовут?">
-                  </label>
                 </li>
                 <li>
-                  <label class="visually-hidden">Электронная почта
+                  <label class="visually-hidden">Электронная почта </label>
                     <input type="text" name="email-for-call" placeholder="Ваша почта для ответа">
-                  </label>
                 </li>
                 <li>
-                  <label class="visually-hidden">Ваш вопрос
+                  <label class="visually-hidden">Ваш вопрос</label>
                     <textarea placeholder="Напишите что-нибудь..."></textarea>
-                  </label>
                 </li>
               </ul>
-              <button class="button" type="submit" name="send-feedback">Отправить</button>
-              <span class="modal-close">x</span>
+              <button class="btn" type="submit" name="send-feedback">Отправить</button>
+              <span class="modal-close">X</span>
             </form>
           </div>
-        </section>
-        <div class="main-map">
-          <img src="img/map.svg" width="1200" height="429">
-        </div>
       </main>
       <footer class="main-footer">
         <div class="footer-wrapper">
