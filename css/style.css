@@ -749,6 +749,7 @@ input[type="text"]:focus{
 }
 
 .main-description h1 {
+
     padding-left: 18px;
     padding-right: 113px;
 
@@ -762,13 +763,14 @@ input[type="text"]:focus{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
 
     margin: 0;
     padding: 0;
     margin-left: 73px;
     margin-right: 30px;
 
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     font-weight: 400;
     color: #333333;
@@ -783,47 +785,54 @@ input[type="text"]:focus{
 
 .main-description-advantages li:nth-child(1)::before {
     content: " ";
+    position: absolute;
+    top: 5px;
+    left: -60px;
+
     width: 50px;
     height: 50px;
-    background-image: url("../img/ice-crea.svg");
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 160px;
-    top: 1598px;
 
+    background-image: url("../img/ice-cream.svg");
+    background-repeat: no-repeat;
 }
 
 .main-description-advantages li:nth-child(2)::before {
     content: " ";
+    position: absolute;
+    top: 5px;
+    left: 500px;
+
     width: 50px;
     height: 50px;
-    background-image: url("../img/ca.svg");
+
+    background-image: url("../img/caw.svg");
     background-repeat: no-repeat;
-    position: absolute;
-    left: 720px;
-    top: 2145px;
 
 }
 
 .main-description-advantages li:nth-child(3)::before {
     content: " ";
+    position: absolute;
+    top: 105px;
+    left: 500px;
+
     width: 50px;
     height: 50px;
-    background-image: url("../img/thermomet.svg");
+
+    background-image: url("../img/thermometr.svg");
     background-repeat: no-repeat;
-    position: absolute;
-    left: 720px;
-    top: 2240px;
 }
 .main-description-advantages li:nth-child(4)::before {
     content: " ";
+    position: absolute;
+    top: 105px;
+    left: -60px;
+
     width: 50px;
     height: 50px;
-    background-image: url("../img/lea.svg");
+
+    background-image: url("../img/leaf.svg");
     background-repeat: no-repeat;
-    position: absolute;
-    left: 160px;
-    top: 2240px;
 }
 
 .wrapper {
