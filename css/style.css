@@ -590,6 +590,7 @@ input[type="text"]:focus{
     justify-content: space-between;
 
     margin-bottom: 40px;
+    
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
@@ -605,34 +606,83 @@ input[type="text"]:focus{
 }
 
 .main-promo-raspberry {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 23px 20px;
+
     width: 560px;
+    min-height: 230px;
     box-sizing: border-box;
+
     background-image: url("../img/promo-1.png");
     border-radius: 20px;
     background-repeat: no-repeat;
 }
 
-.main-promo-raspberry h4
+.main-promo-raspberry h4,
+.main-promo-raspberry p {
+    margin: 0;
+    padding: 0;
+}
 
+.main-promo-raspberry h4 {
+    margin-bottom: 23px;
+}
 
+.main-promo-raspberry p {
+    margin-bottom: 47px;
+}
 
 .main-promo-chocolate {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 23px 20px;
+
     width: 560px;
+    min-height: 230px;
+    box-sizing: border-box;
+
     background-image: url("../img/promo-2.png");
     background-repeat: no-repeat;
     border-radius: 20px;
 }
 
+.main-promo-chocolate h4,
+.main-promo-chocolate p {
+    margin: 0;
+    padding: 0;
+}
+
+.main-promo-chocolate h4 {
+    margin-bottom: 23px;
+}
+
+.main-promo-chocolate p {
+    margin-bottom: 47px;
+}
+
 .button-promo-1 {
-    padding: 12px 44px;
+    align-self: flex-end;
+    padding: 12px 22px;
+
+    width: 165px;
 
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
-    color: #ffffff;
 
-    background-color: #ff6633;
-    border-radius: 50px;
+}
+
+.button-promo-2 {
+    align-self: flex-end;
+    padding: 12px 22px;
+
+    width: 190px;
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+
 }
 
 .main-hit-seller-items {
