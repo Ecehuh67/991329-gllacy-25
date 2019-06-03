@@ -1203,6 +1203,10 @@ input[type="text"]:focus{
 }
 
 .catalog-items li:hover {
+
+    width: 293px;
+    height: 405px;
+
     background-color: #9bafa3;
 }
 
