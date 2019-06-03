@@ -590,7 +590,7 @@ input[type="text"]:focus{
     justify-content: space-between;
 
     margin-bottom: 40px;
-    
+
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
@@ -685,6 +685,10 @@ input[type="text"]:focus{
 
 }
 
+.main-hit-seller {
+    margin-bottom: 90px;
+}
+
 .main-hit-seller-items {
     display: flex;
     justify-content: space-between;
@@ -695,9 +699,35 @@ input[type="text"]:focus{
 }
 
 .main-hit-seller-items li {
+    display: flex;
+    flex-direction: column;
+
     width:267px;
+
     border-radius: 150px;
     text-align: center;
+}
+
+.catalog-title-of-ice-cream {
+    margin: 0;
+    padding: 0;
+    margin-top: 13px;
+
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.catalog-price-wrapper {
+    margin-top: -120px;
+    margin-left: -110px;
+}
+
+.catalog-price {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 700;
+    color: #ffffff;
 }
 
 .main-hit-seller-items img {
@@ -1114,12 +1144,6 @@ input[type="text"]:focus{
     line-height: 22px;
     font-weight: 500;
 }
-.catalog-price {
-    font-size: 45px;
-    line-height: 45px;
-    font-weight: 700;
-    color: #ffffff;
-}
 
 .catalog-weight-of-price {
     font-size: 30px;
@@ -1140,6 +1164,8 @@ input[type="text"]:focus{
 }
 
 .catalog-items li{
+    margin-bottom: 60px;
+
     width: 267px;
 
     text-align: center;
@@ -1176,7 +1202,7 @@ input[type="text"]:focus{
     border-radius: 5px;
 }
 
-.catalog-items:hover {
+.catalog-items li:hover {
     background-color: #9bafa3;
 }
 
