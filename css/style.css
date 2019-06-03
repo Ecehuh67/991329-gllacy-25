@@ -879,10 +879,14 @@ input[type="text"]:focus{
     border-radius: 30px;
 }
 
+.main-map {
+    margin-left: -27px;
+}
+
 .contacts {
     position: absolute;
-    top: 2146px; /* 1946*/
-    left: 871px;
+    top: 1980px; /* 1946*/
+    left: 1071px;
     padding: 31px 26px;
 
     width: 250px;
@@ -1030,6 +1034,8 @@ input[type="text"]:focus{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    padding: 30px 0;
 }
 
 .social-items {
@@ -1054,25 +1060,38 @@ input[type="text"]:focus{
 .footer-info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    position: relative;
 
-    width: 330px;
+    width: 304px;
     min-height: 40px;
 }
 
 .footer-info a {
+    margin-right: 32px;
+    margin-bottom: 5px;
+
     font: inherit;
     color: inherit;
 
     border-bottom: 1px solid #ffffff;
 }
 
-.footer-info a:first-of-type::before {
+.footer-info a:last-child {
+    margin-right: -32px;
+}
+
+.footer-info a:first-child::before {
     content: " ";
+    position: absolute;
+    left: -20px;
+    bottom: -5px;
+
+    width: 50px;
+    height: 50px;
+
     background-image: url("../img/heart-for-delivery-icon.svg");
-    width: 40px;
-    height: 40px;
-    background-size: 40px;
+    background-repeat: no-repeat;
 }
 
 .footer-copyright p a {
