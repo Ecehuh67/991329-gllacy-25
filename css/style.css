@@ -606,10 +606,15 @@ input[type="text"]:focus{
 
 .main-promo-raspberry {
     width: 560px;
+    box-sizing: border-box;
     background-image: url("../img/promo-1.png");
     border-radius: 20px;
     background-repeat: no-repeat;
 }
+
+.main-promo-raspberry h4
+
+
 
 .main-promo-chocolate {
     width: 560px;
@@ -839,12 +844,12 @@ input[type="text"]:focus{
     display: block;
     position: absolute;
 
-    padding: 18px 16px 27px 23px;
     top: 338px;
     left: 363px;
+    padding: 18px 16px 27px 23px;
 
-    width: 477px;
-    min-height: 442px;
+    width: 438px;
+    height: 397px;
 
     font-size: 16px;
     line-height: 24px;
@@ -852,6 +857,7 @@ input[type="text"]:focus{
     color: #999999;
     background-color: #ffffff;
     border-radius: 20px;
+    border: 2px solid yellow;
 }
 
 .feedback-link:hover .comments {
@@ -859,18 +865,77 @@ input[type="text"]:focus{
 }
 
 .comments-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     margin: 0;
     padding: 0;
+    margin-bottom: 25px;
 
-
+    min-height: 283px;
     list-style: none;
+    border: 2px solid green;
+}
+
+.comments-fields li:nth-child(1) input{
+    width: 267px;
+    min-height: 42px;
+
+    border-radius: 5px;
+}
+
+.comments-fields li:nth-child(2) input{
+    width: 267px;
+    min-height: 44px;
+
+    border-radius: 5px;
+}
+
+.comments-fields li:nth-child(3) textarea{
+    width: 428px;
+    min-height: 155px;
+
+    border-radius: 5px;
+}
+
+.feedback {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border: 2px solid red;
+    min-height: 400px;
 }
 
 .feedback p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 23px;
+
     font-size: 24px;
     line-height: 28px;
     font-weight: 500;
     color:  #333333;
+}
+
+.modal-close {
+    position: absolute;
+    left: 443px;
+    top: -2px;
+}
+
+.button-feedback {
+    align-self: flex-end;
+    padding: 11px 25px 14px 25px;
+
+    width: 138px;
+    min-height: 44px;
+
+    font-size: 18px;
+    line-height: 24px;
+    line-height: 0;
+    font-weight: 700;
+    border-radius: 20px;
 }
 
 .main-footer {
@@ -1083,3 +1148,7 @@ body > * > * > * > *{
     background-color: rgba(0, 0, 00, 0.5);
 }
 */
+
+.comments {
+    display: none;
+}
