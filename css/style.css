@@ -1164,6 +1164,8 @@ input[type="text"]:focus{
 }
 
 .catalog-items li{
+    display: flex;
+    flex-direction: column;
     margin-bottom: 60px;
 
     width: 267px;
@@ -1203,13 +1205,34 @@ input[type="text"]:focus{
 }
 
 .catalog-items li:hover {
+    z-index: 1;
+    margin-bottom: -40px;
 
-    width: 293px;
-    height: 405px;
+    width: 283px;
+    height: 400px;
 
-    background-color: #9bafa3;
+    background-color: rgba(155, 175, 163, 0.6);
 }
 
+.catalog-items li:hover .button-catalog-items {
+    display: block;
+}
+
+
+.button-catalog-items {
+    display: none;
+    align-self: center;
+
+    margin-top: 60px;
+    padding: 12px 0;
+
+    width: 200px;
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+
+}
  /*Temporary*/
 /*
 body > * {
