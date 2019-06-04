@@ -26,9 +26,10 @@ a {
 }
 
 .container {
+    padding: 0 27px;
+
     width: 1146px;
     margin: 0 auto;
-    padding: 0 27px;
 }
 
 .cite-navigation a,
@@ -218,12 +219,15 @@ input[type="text"]:focus{
 }
 
 .main-header {
-    padding-top: 9px;
+    position: relative;
+    padding-top: 0px;
 }
 
 .main-logo {
-    margin-right: 23px;
+    margin: 0;
     padding: 0;
+    margin-right: 23px;
+    padding-top: 8px;
 }
 
 .main-navigation {
@@ -241,6 +245,7 @@ input[type="text"]:focus{
     display: flex;
     justify-content: flex-start;
     width: 853px;
+
 }
 
 .cite-navigation {
@@ -248,10 +253,19 @@ input[type="text"]:focus{
     align-items: center;
     justify-content: space-between;
     position: relative;
+
     margin: 0;
     padding: 0;
+    margin-top: -5px;
+
     width: 383px;
+
 }
+
+.cite-navigation li:last-child {
+    margin-right: 33px;
+}
+
 .main-user-fields{
     display: flex;
 }
@@ -275,9 +289,13 @@ input[type="text"]:focus{
 }
 
 .search-field {
+    display: block;
+
     padding: 10px;
+
     width: 17px;
     height: 17px;
+
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
 }
@@ -379,7 +397,10 @@ input[type="text"]:focus{
 }
 
 .button-enterance {
+    display: block;
+
     padding: 5px 15px;
+
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 30px;
 }
@@ -392,6 +413,8 @@ input[type="text"]:focus{
 }
 
 .button-basket {
+    display: block;
+
     padding: 5px 20px;
 
     background-color: rgba(255, 255, 255, 0.2);
@@ -512,6 +535,8 @@ input[type="text"]:focus{
 
 .cite-navigation li:hover .hower-items{
     display: block;
+
+    overflow: hidden;
 }
 
 .hower-items {
@@ -551,7 +576,7 @@ input[type="text"]:focus{
 
 .main-work-time {
     position: absolute;
-    left: 1180px;
+    left: 981px;
     margin: 0;
     min-width: 167px;
 
@@ -615,8 +640,8 @@ input[type="text"]:focus{
     box-sizing: border-box;
 
     background-image: url("../img/promo-1.png");
-    border-radius: 20px;
     background-repeat: no-repeat;
+    border-radius: 20px;
 }
 
 .main-promo-raspberry h4,
@@ -843,6 +868,7 @@ input[type="text"]:focus{
 }
 
 .recipe span{
+    margin: 20px 23px auto 12px;
     font-size: 16px;
     line-height: 22px;
     font-weight: 500;
@@ -852,6 +878,7 @@ input[type="text"]:focus{
 .recipe {
     width: 560px;
     min-height: 220px;
+
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -864,7 +891,16 @@ input[type="text"]:focus{
 }
 
 .recipe a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 200px;
+
+    font-size: 24px;
+    line-height: 30px;
     color:inherit;
+
 }
 
 .subscribe {
