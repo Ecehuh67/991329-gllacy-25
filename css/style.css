@@ -70,7 +70,7 @@ a {
     background-color: #849d8f;
     background-image: url("../img/slider-foto-1.png");
     background-repeat: no-repeat;
-    background-position: top 84px center;
+    background-position: top 83px center;
 
     transition: background-image 0.5s ease, background-color 0.5s ease;
 }
@@ -78,7 +78,7 @@ a {
 .slider {
     position: relative;
 
-    padding-top: 321px;
+    padding-top: 309px;
 
     text-align: center;
     color: #ffffff;
@@ -87,7 +87,7 @@ a {
 .slider-list {
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   list-style: none;
 }
@@ -110,9 +110,9 @@ a {
   display: inline-block;
   padding: 12px 44px;
 
-  font-weight: 600;
-  font-size: 31px;
-  line-height: 41px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
   text-align: center;
   color: #ffffff;
   vertical-align: top;
@@ -193,9 +193,9 @@ a {
 
 .slider-controls {
   position: absolute;
-  bottom: 63px;
-  top: 487px;
-  left: 2px;
+  bottom: 63px;  /*63*/
+  top: 482px;
+  left: 1px;
   z-index: 20;
 
   font-size: 0;
@@ -268,6 +268,7 @@ input[type="text"]:focus{
 
 .main-user-fields{
     display: flex;
+    margin-top: 23px;
 }
 .main-user-fields ul {
     margin: 0px;
@@ -278,7 +279,7 @@ input[type="text"]:focus{
 .user-fields-list {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
 
     min-width: 244px;
@@ -291,7 +292,7 @@ input[type="text"]:focus{
 .search-field {
     display: block;
 
-    padding: 10px;
+    padding: 7px;
 
     width: 17px;
     height: 17px;
@@ -405,6 +406,11 @@ input[type="text"]:focus{
     border-radius: 30px;
 }
 
+.button-enterance p {
+    margin: 0;
+    padding: 0;
+}
+
 .button-enterance:hover path,
 .button-enterance:focus path,
 .button-enterance:hover polygon,
@@ -445,7 +451,6 @@ input[type="text"]:focus{
     border-radius: 10px;
     color: #323232;
 
-    border: 2px solid green;
 }
 
 .basket-of-purches {
@@ -552,7 +557,7 @@ input[type="text"]:focus{
     background-color:  #ffffff;
 }
 
- .hower-items a {
+.hower-items a {
     display: block;
     padding: 12px 20px 15px 22px;
 }
@@ -576,7 +581,8 @@ input[type="text"]:focus{
 
 .main-work-time {
     position: absolute;
-    left: 981px;
+    bottom: -36px;
+    left: 979px;
     margin: 0;
     min-width: 167px;
 
@@ -586,10 +592,14 @@ input[type="text"]:focus{
     color: #ffffff;
 }
 
+.main-work-time:not(.phone-number) {
+    text-align: right;
+}
+
 .phone-number {
     font-size: 22px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 600;
     color: #ffffff;
 }
 
@@ -633,7 +643,7 @@ input[type="text"]:focus{
 .main-promo-raspberry {
     display: flex;
     flex-direction: column;
-    padding: 20px 20px 23px 20px;
+    padding: 14px 20px 23px 17px;
 
     width: 560px;
     min-height: 230px;
@@ -641,7 +651,7 @@ input[type="text"]:focus{
 
     background-image: url("../img/promo-1.png");
     background-repeat: no-repeat;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .main-promo-raspberry h4,
@@ -651,17 +661,19 @@ input[type="text"]:focus{
 }
 
 .main-promo-raspberry h4 {
-    margin-bottom: 23px;
+    margin-bottom: 16px;
+    margin-left: 1px;
 }
 
 .main-promo-raspberry p {
     margin-bottom: 47px;
+    margin-left: 2px;
 }
 
 .main-promo-chocolate {
     display: flex;
     flex-direction: column;
-    padding: 20px 20px 23px 20px;
+    padding: 14px 20px 23px 17px;
 
     width: 560px;
     min-height: 230px;
@@ -669,7 +681,7 @@ input[type="text"]:focus{
 
     background-image: url("../img/promo-2.png");
     background-repeat: no-repeat;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .main-promo-chocolate h4,
@@ -679,11 +691,13 @@ input[type="text"]:focus{
 }
 
 .main-promo-chocolate h4 {
-    margin-bottom: 23px;
+    margin-bottom: 15px;
+    margin-left: 1px;
 }
 
 .main-promo-chocolate p {
     margin-bottom: 47px;
+    margin-left: 2px;
 }
 
 .button-promo-1 {
