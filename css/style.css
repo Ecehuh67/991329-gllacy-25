@@ -624,7 +624,7 @@ input[type="text"]:focus{
     display: flex;
     justify-content: space-between;
 
-    margin-bottom: 40px;
+    margin-bottom: 37px;
 
     font-size: 18px;
     line-height: 22px;
@@ -724,12 +724,13 @@ input[type="text"]:focus{
 }
 
 .main-hit-seller {
-    margin-bottom: 90px;
+    margin-bottom: 94px;
 }
 
 .main-hit-seller-items {
     display: flex;
     justify-content: space-between;
+    position: relative;
 
     padding: 0px;
 
@@ -746,10 +747,21 @@ input[type="text"]:focus{
     text-align: center;
 }
 
+.main-hit-seller-items li:before {
+    content: " ";
+    position: absolute;
+
+    width: 61px;
+    height: 61px;
+
+    background-image: url(../img/hit-seller-icon.svg);
+
+}
+
 .catalog-title-of-ice-cream {
     margin: 0;
     padding: 0;
-    margin-top: 13px;
+    margin-top: 7px;
 
     font-size: 16px;
     line-height: 22px;
@@ -757,7 +769,7 @@ input[type="text"]:focus{
 }
 
 .catalog-price-wrapper {
-    margin-top: -120px;
+    margin-top: -122px;
     margin-left: -110px;
 }
 
@@ -784,17 +796,21 @@ input[type="text"]:focus{
 
     background-image: url("../img/waffle-pattern.jpg");
     border-radius: 15px;
+
 }
 
 .main-description h1 {
-
-    padding-left: 18px;
+    margin: 0;
+    padding: 0;
+    padding-left: 22px;
     padding-right: 113px;
+    padding-top: 23px;
 
     font-size: 24px;
     line-height: 30px;
-    font-weight: 700;
+    font-weight: 500;
     color: #333333;
+
 }
 
 .main-description-advantages {
@@ -805,7 +821,8 @@ input[type="text"]:focus{
 
     margin: 0;
     padding: 0;
-    margin-left: 73px;
+    margin-top: 5px;
+    margin-left: 76px;
     margin-right: 30px;
 
     font-size: 16px;
@@ -825,7 +842,7 @@ input[type="text"]:focus{
     content: " ";
     position: absolute;
     top: 5px;
-    left: -60px;
+    left: -56px;
 
     width: 50px;
     height: 50px;
@@ -863,14 +880,18 @@ input[type="text"]:focus{
 .main-description-advantages li:nth-child(4)::before {
     content: " ";
     position: absolute;
-    top: 105px;
-    left: -60px;
+    top: 93px;
+    left: -56px;
 
     width: 50px;
     height: 50px;
 
     background-image: url("../img/leaf.svg");
     background-repeat: no-repeat;
+}
+
+.main-description-advantages li:nth-child(3) {
+    margin-top: -9px;
 }
 
 .wrapper {
