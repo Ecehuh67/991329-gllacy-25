@@ -200,16 +200,7 @@ a {
 
   font-size: 0;
 }
-/*
-.button:hover,
-.button:focus {
-    background-color: #ff9966;
-}
 
-.button:active {
-    background-color: #cc3333;
-}
-*/
 input[type="text"]:hover {
     border: 1px solid #cccccc;
 }
@@ -262,9 +253,11 @@ input[type="text"]:focus{
 
 }
 
-.cite-navigation li:last-child {
+
+.cite-navigation > li:last-child {
     margin-right: 33px;
 }
+
 
 .main-user-fields{
     display: flex;
