@@ -211,7 +211,7 @@ input[type="text"]:focus{
 
 .main-header {
     position: relative;
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 .main-logo {
@@ -247,7 +247,7 @@ input[type="text"]:focus{
 
     margin: 0;
     padding: 0;
-    margin-top: -5px;
+    margin-bottom: 5px;
 
     width: 383px;
 
@@ -381,8 +381,10 @@ input[type="text"]:focus{
 
 .button-identification {
     padding: 20px 26px;
+
     width: 100px;
     height: 44px;
+
     font-size: 18px;
     line-height: 0;
     font-weight: 700;
@@ -543,15 +545,19 @@ input[type="text"]:focus{
     z-index: 1;
     left: -20px;
     top: 40px;
+
     padding: 0;
     margin: 0;
+
     width: 143px;
+
     border-radius: 10px;
     background-color:  #ffffff;
 }
 
 .hower-items a {
     display: block;
+
     padding: 12px 20px 15px 22px;
 }
 
@@ -567,7 +573,6 @@ input[type="text"]:focus{
     line-height: 16px;
     font-weight: 700;
     color: #333333;
-
     border-bottom: 1px solid #333333;
 
 }
@@ -576,11 +581,13 @@ input[type="text"]:focus{
     position: absolute;
     bottom: -36px;
     left: 979px;
+
     margin: 0;
+
     min-width: 167px;
 
     font-size: 14px;
-    line-weight: 16px;
+    line-height: 16px;
     font-weight: 700;
     color: #ffffff;
 }
@@ -694,7 +701,6 @@ input[type="text"]:focus{
 }
 
 .button-promo-1 {
-    /*align-self: flex-end;*/
     margin-left: auto;
     padding: 11px 23px;
 
@@ -934,6 +940,7 @@ input[type="text"]:focus{
 
 .recipe a {
     display: block;
+
     margin: 0;
     padding: 0;
     margin-top: 7px;
@@ -971,6 +978,7 @@ input[type="text"]:focus{
 
 .subscribe p {
     display: block;
+
     margin: 0;
     padding: 0;
 
@@ -1011,6 +1019,7 @@ input[type="text"]:focus{
 
 .button {
     padding: 10px 20px;
+
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
@@ -1019,13 +1028,15 @@ input[type="text"]:focus{
 }
 
 .main-map {
+    position: relative;
     margin-left: -27px;
 
 }
 
 .contacts {
     position: absolute;
-    top: 1946px; /* 1946*/
+     /* 1946*/
+    top: 200px;
     left: 1111px;
     padding: 31px 26px;
 
