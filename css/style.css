@@ -477,20 +477,12 @@ input[type="text"]:focus{
 }
 
 .enter-menu {
-    padding: 5px 18px 8px 15px;
+    padding: 5px 16px 7px 15px;
     box-sizing: border-box;
 
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 30px;
 }
-
-.basket-menu {
-    padding: 6px 15px 6px 17px;
-
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 30px;
-}
-
 
 .button-enterance {
     margin: 0;
@@ -499,6 +491,16 @@ input[type="text"]:focus{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.button-enterance svg {
+    margin-top: 1px;
+    margin-left: 1px;
+}
+
+.button-enterance span {
+    margin-left: 3px;
+    margin-right: -1px;
 }
 
 .button-enterance p {
@@ -598,6 +600,11 @@ input[type="text"]:focus{
     justify-content: space-between;
 }
 
+.button-basket span {
+    margin-bottom: 3px;
+    margin-right: 2px;
+}
+
 .basket-form {
     display: none;
     position: absolute;
@@ -615,6 +622,13 @@ input[type="text"]:focus{
     border-radius: 10px;
     color: #323232;
 
+}
+
+.basket-menu {
+    padding: 6px 15px 6px 17px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
 }
 
 .basket-of-purches {
