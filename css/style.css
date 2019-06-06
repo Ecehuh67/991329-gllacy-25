@@ -253,9 +253,13 @@ input[type="text"]:focus{
 
 }
 
+.cite-navigation >li > a {
+    padding: 7px 14px;
+    border-radius: 20px;
+}
 
 .cite-navigation > li:last-child {
-    margin-right: 33px;
+    margin-right: 1px;
 }
 
 
@@ -1036,11 +1040,11 @@ input[type="text"]:focus{
 .contacts {
     position: absolute;
      /* 1946*/
-    top: 200px;
-    left: 1111px;
-    padding: 31px 26px;
+    top: 63px;
+    left: 871px;
+    padding: 28px 20px 28px 25px;
 
-    width: 250px;
+    width: 256px;
     min-height: 243px;
 
     font-size: 14px;
@@ -1050,22 +1054,56 @@ input[type="text"]:focus{
 
     background-color: #ffffff;
     border-radius: 15px;
+
 }
 
 .contacts h2 {
+    margin: 0;
+    padding: 0;
+
     font: inherit;
     color: inherit;
 }
 
+.contacts h2:first-of-type {
+    padding-right: 100px;
+}
+
+.contacts p:first-of-type {
+    margin-bottom: 20px;
+}
+
+.contacts p {
+    margin: 0;
+    padding: 0;
+
+}
+
 .feedback-link {
     position: relative;
+    padding: 10px 28px;
+
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
     color: #ffffff;
 
-    background-color: #ff6633;
-    border-radius: 10px;
+    border-radius: 50px;
+}
+
+.contact-number {
+    display: inline-block;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    vertical-align: center;
+}
+
+.available-time {
+    display:inline-block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+    vertical-align: center;
 }
 
 .adress,
