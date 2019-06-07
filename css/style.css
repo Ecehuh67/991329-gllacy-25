@@ -1706,12 +1706,3 @@ body > * > * > * > *{
 
     background-color: rgba(4, 4, 4, 0.4);
 }
-
-.show-overlay li:hover .overlay {
-    display: block;
-}
-
-.show-overlay {
-    list-style: none;
-    text-decoration: underline;
-}
