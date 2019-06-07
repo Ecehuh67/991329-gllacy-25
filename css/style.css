@@ -411,8 +411,8 @@ input[type="text"]:focus{
     background-color: #d07058;
 }
 
-.cite-navigation-point:hover > a,
-.cite-navigation-point:focus > a{
+.cite-navigation-point:first-child:hover > a,
+.cite-navigation-point:first-child:focus > a{
     color: #ffffff;
 }
 
@@ -643,8 +643,13 @@ input[type="text"]:focus{
     margin-bottom: 3px;
     margin-right: 2px;
 }
-
+                    /* Hide basket on main page*/
 .basket-form {
+    display: none;
+}
+                    /* Finish */
+
+.basket-form-active {
     display: none;
     position: absolute;
     left: -295px;
@@ -670,16 +675,19 @@ input[type="text"]:focus{
     border-radius: 30px;
 }
 
+.basket-menu-active {
+
+}
+
 .basket-of-purches {
     min-height: 242px;
 }
 
                 /* Active just in SECOND PAGE  */
 
-/*
-.user-fields-list li:hover .basket-form {
+.user-fields-list li:hover .basket-form-active {
     display: block;
-}   */
+}
 
 .basket-table {
     margin-bottom: 15px;
