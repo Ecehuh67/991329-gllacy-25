@@ -705,6 +705,7 @@ input[type="text"]:focus{
 .user-fields-list li:hover .basket-form-active {
     display: block;
 }
+                        /*     */
 
 .basket-table {
     margin-bottom: 15px;
@@ -800,14 +801,49 @@ input[type="text"]:focus{
 
 .phone-number {
     display: block;
+
     margin-top: 4px;
+
     font-size: 22px;
     line-height: 24px;
     font-weight: 700;
     color: #ffffff;
 }
 
+main {
+    border: 2px solid red;
+}
 
+.breadcrumbs {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+    padding: 0;
+    margin: 0;
+
+    width: 220px;
+
+    border: 2px solid red;
+}
+
+.breadcrumbs li:nth-of-type(1)::after {
+    content: "»";
+    position: absolute;
+    left: 60px;
+
+    width: 7px;
+    height: 7px;
+}
+
+.breadcrumbs li:nth-of-type(2)::after {
+    content: "»";
+    position: absolute;
+    left: 133px;
+
+    width: 7px;
+    height: 7px;
+}
 
 .main-user-fields {
     position: relative;
