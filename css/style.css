@@ -810,10 +810,6 @@ input[type="text"]:focus{
     color: #ffffff;
 }
 
-main {
-    border: 2px solid red;
-}
-
 .breadcrumbs {
     display: flex;
     position: relative;
@@ -821,10 +817,21 @@ main {
 
     padding: 0;
     margin: 0;
+    margin-top: 0;
 
     width: 220px;
 
-    border: 2px solid red;
+    list-style: none;
+
+}
+
+.breadcrumbs a {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #ffffff;
+
+    background-color: inherit;
 }
 
 .breadcrumbs li:nth-of-type(1)::after {
@@ -1598,23 +1605,6 @@ main {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.breadcrumbs {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    margin-top: 26px;
-    list-style: none;
-}
-
-.breadcrumbs a {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 400;
-    color: #ffffff;
-
-    background-color: inherit;
-}
-
 .catalog-filters {
     display: flex;
     flex-wrap: wrap;
@@ -1682,15 +1672,46 @@ main {
     flex-direction: column;
     margin-bottom: 60px;
 
-    width: 283px;  /*267*/
+    width: 267px;  /*267*/
     min-height: 300px;
 
     text-align: center;
 }
 
-.catalog-items li:first-of-type {
-    margin-right: 8px;
+.catalog-items li {
+    position: relative;
+    margin-right: 0px;
 }
+
+                     /*Element item if there is a cursor*/
+.catalog-items li::before {
+    content: " ";
+    position: absolute;
+    left: -13px;
+
+    width: 13px;
+    height: 400px;
+
+    background-color: rgba(155, 175, 163, 0.6);
+    opacity: 0;
+}
+
+.catalog-items li:hover::after {
+    content: " ";
+
+    position: absolute;
+    left: 267px;
+
+    width: 13px;
+    height: 400px;
+
+    background-color: rgba(155, 175, 163, 0.6);
+}
+
+.catalog-items li:hover:before {
+    opacity: 1;
+}
+                           /*     */
 
 .catalog-items img {
     border-radius: 160px;
@@ -1727,7 +1748,7 @@ main {
     z-index: 1;
     margin-bottom: -40px;
 
-    width: 283px;
+    width: 267px;  /*283*/
     height: 400px;
 
     background-color: rgba(155, 175, 163, 0.6);
