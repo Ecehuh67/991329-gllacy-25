@@ -227,8 +227,8 @@ input[type="text"]:focus{
 .main-wrapper {
     display: flex;
     justify-content: flex-start;
-    width: 853px;
 
+    width: 853px;
 }
 
 .cite-navigation a,
@@ -416,13 +416,19 @@ input[type="text"]:focus{
     color: #ffffff;
 }
 
-                            /* КОНЕЦ*/
+                            /*       */
 
 .main-user-fields{
     display: inline-block;
     vertical-align: center;
     margin-top: 22px;
 }
+                            /*for basket*/
+.main-user-fields-catalog {
+    width: 261px;
+}
+                            /*        */
+
 .main-user-fields ul {
     margin: 0px;
     padding: 0px;
@@ -638,6 +644,12 @@ input[type="text"]:focus{
     align-items: center;
     justify-content: space-between;
 }
+                            /*for basket*/
+
+.button-basket-active {
+    width: 87px;
+}
+                            /*    */
 
 .button-basket span {
     margin-bottom: 3px;
@@ -676,8 +688,13 @@ input[type="text"]:focus{
 }
 
 .basket-menu-active {
-
+    background-color: #ffffff;
 }
+
+.basket-menu-active a{
+    color: #333333;
+}
+
 
 .basket-of-purches {
     min-height: 242px;
@@ -789,6 +806,8 @@ input[type="text"]:focus{
     font-weight: 700;
     color: #ffffff;
 }
+
+
 
 .main-user-fields {
     position: relative;
