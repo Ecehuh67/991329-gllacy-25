@@ -776,7 +776,7 @@ input[type="text"]:focus{
     display: flex;
     justify-content: space-between;
 
-    margin-bottom: 37px;
+    margin-bottom: 40px;
 
     font-size: 18px;
     line-height: 22px;
@@ -933,15 +933,31 @@ input[type="text"]:focus{
 }
 
 .catalog-price-wrapper {
+    display: flex;
     margin-top: -116px;
-    margin-left: -110px;
+    margin-left: -112px;
 }
 
 .catalog-price {
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
     font-size: 45px;
     line-height: 45px;
     font-weight: 700;
     color: #ffffff;
+}
+
+.catalog-price-amount {
+    margin-left: 110px;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.catalog-weight-of-price {
+    margin-top: 6px;
 }
 
 .main-hit-seller-items img {
