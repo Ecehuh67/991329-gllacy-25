@@ -53,7 +53,7 @@ a {
     background-color: #849d8f;
     background-image: url("../img/slider-foto-1.png");
     background-repeat: no-repeat;
-    background-position: top 83px center;
+    background-position: top 82px center;
 
     transition: background-image 0.5s ease, background-color 0.5s ease;
 }
@@ -61,16 +61,17 @@ a {
 .slider {
     position: relative;
 
-    padding-top: 309px;
+    padding-top: 308px;
 
     text-align: center;
     color: #ffffff;
+
 }
 
 .slider-list {
   margin: 0;
   padding: 0;
-  margin-bottom: 42px;
+  margin-bottom: 41px;
 
   list-style: none;
 }
@@ -79,19 +80,28 @@ a {
     display: none;
 }
 
+.slide-button {
+    margin-top: 7px;
+
+}
+
 .slide-title {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
 
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
 }
 
+.slide-button {
+    margin-top: 7px;
+}
+
 .btn{
   display: inline-block;
-  padding: 12px 44px;
+  padding: 8px 40px 11px 40px;
 
   font-weight: 700;
   font-size: 32px;
@@ -176,9 +186,8 @@ a {
 
 .slider-controls {
   position: absolute;
-  bottom: 63px;  /*63*/
-  top: 482px;
-  left: 1px;
+  bottom: 63px;
+  top: 481px;
   z-index: 20;
 
   font-size: 0;
@@ -239,6 +248,10 @@ input[type="text"]:focus{
 .cite-navigation-point:hover a,
 .cite-navigation-point:focus a{
     color: #333333;
+}
+
+.cite-navigation-point > a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .user-fields-list li:hover,
@@ -484,6 +497,18 @@ input[type="text"]:focus{
     border-radius: 30px;
 }
 
+.enter-menu::after {
+    content: " ";
+    position: absolute;
+    top: 32px;
+    left: 45px;
+
+    width: 85px;
+    height: 3px;
+
+    background-color: #849d8f;
+}
+
 .button-enterance {
     margin: 0;
     padding: 0;
@@ -635,9 +660,12 @@ input[type="text"]:focus{
     min-height: 242px;
 }
 
+                /* Active just in SECOND PAGE  */
+
+/*
 .user-fields-list li:hover .basket-form {
     display: block;
-}
+}   */
 
 .basket-table {
     margin-bottom: 15px;
@@ -714,7 +742,7 @@ input[type="text"]:focus{
 
 .main-work-time {
     position: absolute;
-    bottom: -36px;
+    top: 71px;
     left: 979px;
 
     margin: 0;
@@ -732,6 +760,8 @@ input[type="text"]:focus{
 }
 
 .phone-number {
+    display: block;
+    margin-top: 4px;
     font-size: 22px;
     line-height: 24px;
     font-weight: 700;
