@@ -1682,9 +1682,14 @@ main {
     flex-direction: column;
     margin-bottom: 60px;
 
-    width: 267px;
+    width: 283px;  /*267*/
+    min-height: 300px;
 
     text-align: center;
+}
+
+.catalog-items li:first-of-type {
+    margin-right: 8px;
 }
 
 .catalog-items img {
