@@ -795,17 +795,20 @@ input[type="text"]:focus{
 .main-promo-raspberry {
     display: flex;
     flex-direction: column;
-    padding: 14px 20px 23px 17px;
+    padding: 14px 20px 14px 17px;
+    box-sizing: border-box;
 
     width: 560px;
-    min-height: 230px;
-    box-sizing: border-box;
+    min-height: 229px;
 
     background-image: url("../img/promo-1.jpg");
     background-repeat: no-repeat;
     background-position: center;
 
-    border-radius: 20px;
+    border-radius: 15px;
+}
+
+.main-promo-raspberry > * {
 }
 
 .main-promo-raspberry h4,
@@ -827,16 +830,16 @@ input[type="text"]:focus{
 .main-promo-chocolate {
     display: flex;
     flex-direction: column;
-    padding: 14px 20px 23px 17px;
+    padding: 14px 20px 14px 17px;
+    box-sizing: border-box;
 
     width: 560px;
-    min-height: 230px;
-    box-sizing: border-box;
+    min-height: 229px;
 
     background-image: url("../img/promo-2.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .main-promo-chocolate h4,
@@ -856,13 +859,17 @@ input[type="text"]:focus{
 }
 
 .button-promo-1 {
-    margin-left: auto;
-    padding: 11px 23px;
+    margin-left: 357px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 9px;
+    padding-bottom: 13px;
+
+    width: 165px;
 
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
-
 }
 
 .button-promo-2 {
