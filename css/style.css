@@ -1783,6 +1783,21 @@ input[type="text"]:focus{
     border-radius: 50%;
 }
 
+.main-footer-catalog {
+    position: relative;
+}
+
+.main-footer-catalog::after {
+    content: " ";
+    position: absolute;
+    top: -5px;
+
+    width: 1146px;
+    height: 1px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 .catalog-items li:hover {
     z-index: 1;
     margin-bottom: -40px;
