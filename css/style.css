@@ -817,7 +817,7 @@ input[type="text"]:focus{
 
     padding: 0;
     margin: 0;
-    margin-top: 0;
+    margin-top: 12px;
 
     width: 220px;
 
@@ -1605,9 +1605,21 @@ input[type="text"]:focus{
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.catalog-main-caption {
+    margin: 0;
+    padding: 0;
+    margin-top: 2px;
+
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: 700;
+}
+
 .catalog-filters {
     display: flex;
     flex-wrap: wrap;
+
+    margin-bottom: 40px;
 
     width: 949px;
 
@@ -1642,6 +1654,7 @@ input[type="text"]:focus{
 
 .catalog {
     padding: 0;
+    margin-bottom: 101px;
 }
 .catalog h2{
     font-size: 16px;
@@ -1673,7 +1686,7 @@ input[type="text"]:focus{
     margin-bottom: 60px;
 
     width: 267px;  /*267*/
-    min-height: 300px;
+    min-height: 303px;
 
     text-align: center;
 }
@@ -1717,9 +1730,21 @@ input[type="text"]:focus{
     border-radius: 160px;
 }
 
+
 .pagination-list {
     display:flex;
     justify-content: flex-end;
+    justify-content: space-between;
+    position: absolute;
+    right: 262px;
+    bottom: -572px;
+
+    margin: 0;
+    padding: 0;
+
+    width: 200px;
+
+    list-style: none;
 }
 
 .pagination-list a{
@@ -1731,24 +1756,38 @@ input[type="text"]:focus{
     background-color: #849d8f;
 }
 
-.pagination-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.pagination-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+}
+
+.pagination-item:hover a,
+.pagination-item:focus a {
+    background-color: rgba(155, 175, 163, 0.6);
+}
+
+.pagination-item:active a {
+    background-color: #ffffff;
+    color: #333333;
 }
 
 .pagination-item-current a{
     color: #333333;
 
     background-color: #ffffff;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 
 .catalog-items li:hover {
     z-index: 1;
     margin-bottom: -40px;
 
-    width: 267px;  /*283*/
+    width: 267px;
     height: 400px;
 
     background-color: rgba(155, 175, 163, 0.6);
