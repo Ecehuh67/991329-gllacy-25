@@ -399,10 +399,24 @@ input[type="text"]:focus{
     background-color: #f6b5a5;
 }
 
-.active-link > a {
+                /* Активное состояние на странице каталога */
+.active-catalog,
+.active-catalog-milk  {
     background-color: #d07058;
     color: #ffffff;
 }
+
+.cite-navigation > li:first-child:hover,
+.cite-navigation > li:first-child:focus {
+    background-color: #d07058;
+}
+
+.cite-navigation-point:hover > a,
+.cite-navigation-point:focus > a{
+    color: #ffffff;
+}
+
+                            /* КОНЕЦ*/
 
 .main-user-fields{
     display: inline-block;
