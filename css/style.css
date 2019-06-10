@@ -2060,7 +2060,7 @@ body > * > * > * > *{
 */
 
 .comments {
-    display: block;
+    display: none;
     z-index: 2;
 }
 
