@@ -291,7 +291,7 @@ input[type="text"]:focus{
 }
 
 .cite-navigation > li{
-    padding: 1px 14px;
+    padding: 0px 14px 3px 14px;
     border-radius: 30px;
 }
 
@@ -664,15 +664,15 @@ input[type="text"]:focus{
 .basket-form-active {
     display: none;
     position: absolute;
-    left: -295px;
-    top: 59px;
+    left: -280px;
+    top: 36px;
     z-index: 1;
 
     padding: 0 15px;
     padding-bottom: 20px;
 
     width: 510px;
-    min-height: 202px;
+    min-height: 242px;
 
     background-color: #f8f7f4;
     border-radius: 10px;
@@ -708,7 +708,7 @@ input[type="text"]:focus{
                         /*     */
 
 .basket-table {
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 
     width: 510px;
     min-height: 130px;
@@ -972,7 +972,7 @@ input[type="text"]:focus{
 }
 
 .main-hit-seller {
-    margin-bottom: 88px;
+    margin-bottom: 40px;
 }
 
 .main-hit-seller-items {
@@ -1009,7 +1009,7 @@ input[type="text"]:focus{
 .catalog-title-of-ice-cream {
     margin: 0;
     padding: 0;
-    margin-top: 7px;
+    margin-top: 4px;
 
     font-size: 16px;
     line-height: 22px;
@@ -1018,7 +1018,7 @@ input[type="text"]:focus{
 
 .catalog-price-wrapper {
     display: flex;
-    margin-top: -116px;
+    margin-top: -65px;    /*-116*/
     margin-left: -112px;
 }
 
@@ -1026,6 +1026,7 @@ input[type="text"]:focus{
     margin: 0;
     padding: 0;
     margin-left: 5px;
+
     font-size: 45px;
     line-height: 45px;
     font-weight: 700;
@@ -1034,6 +1035,7 @@ input[type="text"]:focus{
 
 .catalog-price-amount {
     margin-left: 110px;
+
     font-size: 45px;
     line-height: 45px;
     font-weight: 700;
@@ -1541,7 +1543,7 @@ input[type="text"]:focus{
     justify-content: flex-start;
     position: relative;
 
-    margin-top: 29px;
+    margin-top: 28px;
     margin-left: 224px;
 
     width: 310px;
@@ -1619,7 +1621,7 @@ input[type="text"]:focus{
     display: flex;
     flex-wrap: wrap;
 
-    margin-bottom: 40px;
+    margin-bottom: 36px;         /*!!!!!!!!!*/
 
     width: 949px;
 
@@ -1630,7 +1632,6 @@ input[type="text"]:focus{
 
     background-color: inherit;
 }
-
 .catalog-filters span {
     font-size: 14px;
     line-height: 16px;
@@ -1654,7 +1655,7 @@ input[type="text"]:focus{
 
 .catalog {
     padding: 0;
-    margin-bottom: 101px;
+    margin-bottom: 108px;
 }
 .catalog h2{
     font-size: 16px;
@@ -1683,17 +1684,33 @@ input[type="text"]:focus{
 .catalog-items li{
     display: flex;
     flex-direction: column;
-    margin-bottom: 60px;
+    position: relative;
+    margin-right: 0px;
+    padding-top: 5px;
+    box-sizing: border-box;
+
+    margin-bottom: 30px;   /*60*/
 
     width: 267px;  /*267*/
-    min-height: 303px;
+    min-height: 332px;   /*303*/
 
     text-align: center;
 }
 
-.catalog-items li {
-    position: relative;
-    margin-right: 0px;
+.button-catalog-items {
+    display: none;
+    align-self: center;
+
+    margin-top: 11px;
+    margin-right: 2px;
+    padding: 8px 0px 13px 0px;
+
+    width: 200px;
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    border-radius: 20px;
 }
 
                      /*Element item if there is a cursor*/
@@ -1701,33 +1718,55 @@ input[type="text"]:focus{
     content: " ";
     position: absolute;
     left: -13px;
+    top: 0;
 
     width: 13px;
-    height: 400px;
+    height: 405px;
 
     background-color: rgba(155, 175, 163, 0.6);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     opacity: 0;
 }
 
-.catalog-items li:hover::after {
+.catalog-items li::after {
     content: " ";
 
     position: absolute;
     left: 267px;
+    top: 0;
 
     width: 13px;
-    height: 400px;
+    height: 405px;
 
     background-color: rgba(155, 175, 163, 0.6);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    opacity: 0;
 }
 
-.catalog-items li:hover:before {
+.catalog-items li:hover:before,
+.catalog-items li:hover:after {
     opacity: 1;
 }
                            /*     */
 
+.catalog-items li:hover {
+    z-index: 1;
+    margin-bottom: -50px;
+
+    width: 267px;
+    height: 405px;
+
+background-color: rgba(155, 175, 163, 0.6);
+}
+
+.catalog-items li:hover .button-catalog-items {
+    display: block;
+}
+
 .catalog-items img {
-    border-radius: 160px;
+    border-radius: 50% ;  /*160*/
 }
 
 
@@ -1738,6 +1777,7 @@ input[type="text"]:focus{
     position: absolute;
     right: 262px;
     bottom: -572px;
+
 
     margin: 0;
     padding: 0;
@@ -1798,35 +1838,6 @@ input[type="text"]:focus{
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.catalog-items li:hover {
-    z-index: 1;
-    margin-bottom: -40px;
-
-    width: 267px;
-    height: 400px;
-
-    background-color: rgba(155, 175, 163, 0.6);
-}
-
-.catalog-items li:hover .button-catalog-items {
-    display: block;
-}
-
-
-.button-catalog-items {
-    display: none;
-    align-self: center;
-
-    margin-top: 60px;
-    padding: 12px 0;
-
-    width: 200px;
-
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 700;
-
-}
  /*Temporary*/
 /*
 body > * {
