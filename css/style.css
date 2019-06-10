@@ -673,10 +673,10 @@ input[type="text"]:focus{
     width: 512px;
     min-height: 242px;
 
-    background-color: #f8f7f4;
+    background-color: rgb(248, 247, 244);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     color: #323232;
-
 }
 
 .basket-menu {
@@ -709,6 +709,7 @@ input[type="text"]:focus{
 
 .basket-of-purches {
     min-height: 238px;
+  border-radius: 5px;
 }
 
 .modal-close {
