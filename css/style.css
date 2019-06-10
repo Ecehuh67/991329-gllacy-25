@@ -1558,58 +1558,70 @@ input[type="text"]:focus{
     display: block;
     position: absolute;
 
-    top: 338px;
-    left: 363px;
-    padding: 18px 16px 27px 23px;
+    top: 337px;
+    left: 603px;
+    padding: 8px 16px 27px 23px;
 
     width: 438px;
-    height: 397px;
+    min-height: 397px;
 
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: #999999;
     background-color: #ffffff;
-    border-radius: 20px;
-    border: 2px solid yellow;
-}
-
-.feedback-link:hover .comments {
-    display: block;
+    border-radius: 10px;
 }
 
 .comments-fields {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     margin: 0;
+    margin-bottom: 19px;
     padding: 0;
-    margin-bottom: 25px;
 
-    min-height: 283px;
+    min-height: 282px;
     list-style: none;
-    border: 2px solid green;
 }
 
 .comments-fields li:nth-child(1) input{
-    width: 267px;
-    min-height: 42px;
+    box-sizing: border-box;
+    padding-left: 13px;
+    margin-left: 1px;
+    margin-bottom: 20px;
 
+    width: 267px;
+    min-height: 44px;
+
+    border: 1px solid #d3d3d2;
     border-radius: 5px;
 }
 
 .comments-fields li:nth-child(2) input{
+    box-sizing: border-box;
+    padding-left: 13px;
+    margin-left: 1px;
+    margin-bottom: 20px;
+
     width: 267px;
     min-height: 44px;
 
+    border: 1px solid #d3d3d2;
     border-radius: 5px;
 }
 
 .comments-fields li:nth-child(3) textarea{
+    box-sizing: border-box;
+    padding-left: 13px;
+    padding-top: 10px;
+    margin-left: 1px;
+
     width: 428px;
     min-height: 155px;
 
+    border: 1px solid #d3d3d2;
     border-radius: 5px;
 }
 
@@ -1617,14 +1629,14 @@ input[type="text"]:focus{
     display: flex;
     position: relative;
     flex-direction: column;
-    border: 2px solid red;
     min-height: 400px;
 }
 
 .feedback p {
     margin: 0;
     padding: 0;
-    margin-bottom: 23px;
+    margin-top: 7px;
+    margin-bottom: 20px;
 
     font-size: 24px;
     line-height: 28px;
@@ -1635,6 +1647,7 @@ input[type="text"]:focus{
 .button-feedback {
     align-self: flex-end;
     padding: 11px 25px 14px 25px;
+    margin-right: 9px;
 
     width: 138px;
     min-height: 44px;
@@ -1644,6 +1657,42 @@ input[type="text"]:focus{
     line-height: 0;
     font-weight: 700;
     border-radius: 20px;
+}
+
+.modal-close-main {
+    position: absolute;
+    right: 0;
+    top: 7px;
+
+    width: 18px;
+    height: 18px;
+
+    font-size: 0;
+
+    border: 0;
+    background-color: transparent;
+
+}
+
+.modal-close-main::before,
+.modal-close-main::after {
+    content: " ";
+    position: absolute;
+    top: 8px;
+    left: -2px;
+
+    width: 21px;
+    height: 2px;
+
+    background-color: #333333;
+}
+
+.modal-close-main::before {
+    transform: rotate(45deg);
+}
+
+.modal-close-main::after {
+    transform: rotate(-45deg);
 }
 
 .main-footer {
@@ -2011,7 +2060,7 @@ body > * > * > * > *{
 */
 
 .comments {
-    display: none;
+    display: block;
     z-index: 2;
 }
 
