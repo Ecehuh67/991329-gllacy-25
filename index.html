@@ -344,6 +344,24 @@
   </div>
   <div class="overlay">
   </div>
+  <script>
+     var link = document.querySelector(".feedback-link");
+     var popup = document.querySelector(".comments");
+     var overlay = document.querySelector(".overlay");
+     var close = popup.querySelector(".modal-close-main");
+
+     link.addEventListener("click", function(evt) {
+         evt.preventDefault();
+         popup.classList.add("comments-show");
+         overlay.classList.add("overlay-show");
+     });
+
+     close.addEventListener("click", function(evt) {
+         evt.preventDefault();
+         popup.classList.remove("comments-show");
+         overlay.classList.remove("overlay-show");
+     });
+  </script>
 </body>
 
 </html>

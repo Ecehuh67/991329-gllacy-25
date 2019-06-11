@@ -1555,11 +1555,12 @@ input[type="text"]:focus{
 }
 
 .comments {
-    display: block;
-    position: absolute;
+    display: none;
+    z-index: 2;
+    position: fixed;
 
-    top: 337px;
-    left: 603px;
+    top: 338px;
+    left: calc(50% - 219px);
     padding: 8px 16px 27px 23px;
 
     width: 438px;
@@ -2059,9 +2060,8 @@ body > * > * > * > *{
 }
 */
 
-.comments {
-    display: none;
-    z-index: 2;
+.comments-show {
+    display: block;
 }
 
 .overlay {
@@ -2075,4 +2075,8 @@ body > * > * > * > *{
     height: 100%;
 
     background-color: rgba(4, 4, 4, 0.4);
+}
+
+.overlay-show {
+    display: block;
 }
