@@ -14,7 +14,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <div class="main-wrapper">
-          <a href="#" class="main-logo">
+          <a href="index.html" class="main-logo">
             <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси Шоп">
           </a>
           <ul class="cite-navigation">
@@ -146,7 +146,7 @@
       </ul>
       <h1 class="catalog-main-caption">Сливочное мороженое</h1>
       <!--Здесь будет форма с фильтрами-->
-      <section class="catalog-filters">
+      <form class="catalog-filters">
         <p class="filter-sort">
           <label for="sort">Сортировка:</label>
           <select id="sort">
@@ -172,7 +172,7 @@
           <input type="radio" id="percent-4" name="percent" value=">30%">
           <label for="percent-4">выше 30%</label>
         </p>
-        <p class="">
+        <p class="filter-fill">
           <span>Наполнители:</span>
           <input type="checkbox" id="filled-1" name="chocolate" checked>
           <label for="filled-1">шоколадные</label>
@@ -187,7 +187,7 @@
         </p>
         <button class="button-filter" type="submit" name="sent-filter">Применить
         </button>
-      </section>
+      </form>
       <!--TEST SECTION ending -->
       <section class="catalog">
         <ul class="catalog-items">
@@ -324,9 +324,12 @@
             <a href="#" class="btn button-catalog-items">Быстрый просмотр</a>
           </li>
         </ul>
+      </section>
+    </main>
+    <footer class="main-footer main-footer-catalog">
+      <div class="pagination-container">
         <ul class="pagination-list">
-          <li class="pagination-item"><a href="#">
-              </a> </li>
+          <li class="pagination-item"><a href="#"><</a> </li> 
           <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
@@ -334,9 +337,7 @@
           <li class="pagination-item"><a href="#">5</a></li>
           <li class="pagination-item"><a href="#">></a></li>
         </ul>
-      </section>
-    </main>
-    <footer class="main-footer main-footer-catalog">
+      </div>
       <div class="footer-wrapper">
         <div class="footer-social">
           <ul class="social-items">
