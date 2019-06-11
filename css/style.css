@@ -465,6 +465,7 @@ input[type="text"]:focus{
 .search-buttom {
     display: none;
     position: absolute;
+    z-index: 2;
     left: -310px;
     top: 37px;
     padding: 20px 0 15px 15px;
@@ -1559,7 +1560,7 @@ input[type="text"]:focus{
     z-index: 2;
     position: fixed;
 
-    top: 338px;
+    top: calc(50% - 199px);
     left: calc(50% - 219px);
     padding: 8px 16px 27px 23px;
 
@@ -1825,9 +1826,9 @@ input[type="text"]:focus{
     display: flex;
     flex-wrap: wrap;
 
-    margin-bottom: 36px;         /*!!!!!!!!!*/
+    margin-bottom: 36px;
 
-    width: 949px;
+    width: 879px;
 
     font-size: 16px;
     line-height: 18px;
@@ -1845,16 +1846,231 @@ input[type="text"]:focus{
     font: inherit;
 }
 
-.button-filter {
+.filter-sort {
+    border: none;
+}
 
+.filter-price-range {
+    border: none;
+}
+
+.filter-price-range > div{
+    box-sizing: border-box;
+    padding: 3px 15px 3px 15px;;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    vertical-align: center;
+    text-align: center;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 12px;
+
+  /*box-sizing: border-box;
+  padding: 8px 15px 8px 15px;;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;*/
+}
+
+.range-controls .scale {
+    margin-top: 10px;
+
+    width: 177px;
+    height: 4px;
+
+    background-color: rgba(248, 247, 244, 0.502);
+}
+
+.range-controls .bar {
+    margin-left: 16px;
+    width: 107px;;
+    height: 4px;
+
+    background-color: rgb(248, 247, 244);
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+
+    width: 4px;
+    height: 4px;
+
+    background-color: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.range-toggle-min {
+    left: 16px;
+}
+
+.range-toggle-max {
+    right: 53px;
+}
+
+.filter-fattiness {
+    border: none;
+}
+
+.filter-fattiness-container {
+    box-sizing: border-box;
+    padding: 8px 15px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.fat {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    margin-left: 5px;
+
+    cursor: pointer;
+}
+
+.fat input[type="radio"] + .radio-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 17px;
+  height: 17px;
+
+  border: 3px solid #e1e7e3;
+  border-radius: 50%;
+}
+
+.fat input[type="radio"]:focus + .radio-indicator {
+  border-color: #e1e7e3;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.fat input[type="radio"]:checked + .radio-indicator:before {
+    content: " ";
+    position: absolute;
+    top: calc(50% - 4px);
+    left: calc(50% - 4px);
+
+    width: 8px;
+    height: 8px;
+
+    background-color: #e1e7e3;
+    border-radius: 50%;
+}
+
+.filter-fill {
+    width: 700px;
+    border: none;
+}
+
+.filter-fill-container {
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 8px 0px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.filter-fill-caption {
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+.filled {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-left: 31px;
+    margin-left: 15px;
+
+    cursor: pointer;
+}
+
+.filled input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 17px;
+  height: 17px;
+
+  border: 1px solid #e1e7e3;
+}
+
+.filled input[type="checkbox"]:focus + .checkbox-indicator {
+  border-color: #e1e7e3;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filled input[type="checkbox"]:checked + .checkbox-indicator:before {
+    content: " ";
+    position: absolute;
+    top: 8px;
+    left: 3px;
+
+    width: 8px;
+    height: 3px;
+
+    background-color: #e1e7e3;
+
+    transform: rotate(45deg);
+}
+
+.filled input[type="checkbox"]:checked + .checkbox-indicator:after {
+    content: " ";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+
+    width: 17px;
+    height: 3px;
+
+    background-color: #e1e7e3;
+    transform: rotate(135deg);
+}
+
+.button-filter {
+    display: block;
+    padding: 7px 28px 7px 28px;
+    margin-top: 20px;
+    box-sizing: border-box;
+
+    width: 144px;
+    height: 36px;
+
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #fcfcfc;
+    vertical-align: center;
+
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
 }
 .button-filter:hover,
 .button-filter:focus {
     background-color: #ffffff;
+    color: #333333;
 }
 
 .button-filter:active {
-    background-color: #eaeaea;
+    background-color: rgb(237, 237, 237);
+    box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
 }
 
 .catalog {
