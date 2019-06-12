@@ -1816,6 +1816,7 @@ input[type="text"]:focus{
     margin: 0;
     padding: 0;
     margin-top: 2px;
+    margin-bottom: 26px;
 
     font-size: 35px;
     line-height: 41px;
@@ -1824,6 +1825,7 @@ input[type="text"]:focus{
 
 .catalog-filters {
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
 
     margin-bottom: 36px;
@@ -1837,6 +1839,12 @@ input[type="text"]:focus{
 
     background-color: inherit;
 }
+
+.catalog-filters p{
+    margin: 0;
+    padding: 0;
+}
+
 .catalog-filters span {
     font-size: 14px;
     line-height: 16px;
@@ -1847,7 +1855,33 @@ input[type="text"]:focus{
 }
 
 .filter-sort {
+    margin: 0;
+    padding: 0;
+
     border: none;
+}
+
+.filter-sort legend {
+    margin-left: 16px;
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.filter-sort-select {
+
+    padding-top: 8px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-right: 33px;
+
+    -webkit-appearance: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
 }
 
 .filter-price-range {
@@ -1856,7 +1890,7 @@ input[type="text"]:focus{
 
 .filter-price-range > div{
     box-sizing: border-box;
-    padding: 3px 15px 3px 15px;;
+    padding: 3px 15px 3px 15px;
 
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
