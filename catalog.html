@@ -150,7 +150,6 @@
         <p>
             <fieldset class="filter-sort">
                 <legend>Сортировка:</legend>
-          <!--<label for="sort">Сортировка:</label>-->
           <select class="filter-sort-select" id="sort">
             <option selected>по популярности</option>
             <option>сначала недорогие</option>
@@ -162,8 +161,7 @@
         <p>
             <fieldset class="filter-price-range">
                 <legend>Цена: 100 руб. – 500 руб.</legend>
-          <!--<label for="range-of-price">Цена: 100 руб. – 500 руб.</label>-->
-          <div>
+          <div class="filter-price-range-container">
           <div class="range-controls">
         <div class="scale">
           <div class="bar"></div>
@@ -172,16 +170,12 @@
         <div class="range-toggle range-toggle-max"></div>
       </div>
           </div>
-          <!--<div>
-          <input type="range" id="range-of-price" name="range-of-price">
-      </div>-->
       </fieldset>
         </p>
 
         <p>
             <fieldset class="filter-fattiness">
                 <legend>Жирность:</legend>
-          <!--<span>Жирность:</span>-->
           <div class="filter-fattiness-container">
             <label class="fat">
           <input class="visually-hidden" type="radio" id="percent-1" name="percent" value="0%">
@@ -209,7 +203,6 @@
         <p>
             <fieldset class="filter-fill">
                 <legend class="filter-fill-caption">Наполнители:</legend>
-          <!--<span>Наполнители:</span>-->
           <div class="filter-fill-container">
             <label class="filled">
           <input class="visually-hidden" type="checkbox" name="chocolate" checked>

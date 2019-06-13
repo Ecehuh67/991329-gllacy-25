@@ -1828,9 +1828,9 @@ input[type="text"]:focus{
     justify-content: flex-start;
     flex-wrap: wrap;
 
-    margin-bottom: 36px;
+    margin-bottom: 35px;
 
-    width: 879px;
+    width: 979px;  /*879*/
 
     font-size: 16px;
     line-height: 18px;
@@ -1843,11 +1843,6 @@ input[type="text"]:focus{
 .catalog-filters p{
     margin: 0;
     padding: 0;
-}
-
-.catalog-filters span {
-    font-size: 14px;
-    line-height: 16px;
 }
 
 .catalog-filters input{
@@ -1888,14 +1883,23 @@ input[type="text"]:focus{
     border: none;
 }
 
-.filter-price-range > div{
+.filter-price-range legend {
+    margin-left: 16px;
+
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.filter-price-range-container{
     box-sizing: border-box;
-    padding: 3px 15px 3px 15px;
+    padding: 7px 22px 4px 9px;
+    margin-left: 10px;
+    margin: 0;
 
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
-    vertical-align: center;
-    text-align: center;
+
 }
 
 .range-controls {
@@ -1912,6 +1916,7 @@ input[type="text"]:focus{
 
 .range-controls .scale {
     margin-top: 10px;
+    margin-left: 13px;
 
     width: 177px;
     height: 4px;
@@ -1929,7 +1934,7 @@ input[type="text"]:focus{
 
 .range-toggle {
     position: absolute;
-    top: -9px;
+    top: -8px;
 
     width: 4px;
     height: 4px;
@@ -1942,32 +1947,80 @@ input[type="text"]:focus{
 }
 
 .range-toggle-min {
-    left: 16px;
+    left: 27px;
 }
 
 .range-toggle-max {
-    right: 53px;
+    right: 45px;
 }
 
 .filter-fattiness {
+    margin: 0;
+    padding: 0;
+
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+
     border: none;
+}
+
+.filter-fattiness legend {
+    margin-left: 15px;
+    margin-bottom: 5px;
 }
 
 .filter-fattiness-container {
     box-sizing: border-box;
-    padding: 8px 15px;
+    padding: 8px 17px 9px 6px;
+    margin-left: 0px;
+    margin-top: 2px;
 
+
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     text-align: center;
 }
 
-.fat {
+.fat:first-of-type {
     position: relative;
     margin: 0;
     padding: 0;
-    padding-left: 30px;
-    margin-left: 5px;
+    padding-left: 33px;
+    margin-left: 7px;
+
+    cursor: pointer;
+}
+
+.fat:nth-of-type(2) {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-left: 32px;
+    margin-left: 13px;
+
+    cursor: pointer;
+}
+
+.fat:nth-of-type(3) {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-left: 32px;
+    margin-left: 13px;
+
+    cursor: pointer;
+}
+
+.fat:nth-of-type(4) {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-left: 32px;
+    margin-left: 13px;
 
     cursor: pointer;
 }
@@ -2004,31 +2057,84 @@ input[type="text"]:focus{
 }
 
 .filter-fill {
-    width: 700px;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+
+    width: 702px;
     border: none;
+}
+
+.filter-fill-caption {
+    padding-left: 10px;
+    margin-bottom: 7px;
+    margin-left: 5px;
 }
 
 .filter-fill-container {
     display: flex;
     justify-content: flex-start;
     box-sizing: border-box;
-    padding: 8px 0px;
+    padding: 8px 5px 10px 0px;
+
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
 
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
 }
 
-.filter-fill-caption {
-    padding-left: 10px;
-    margin-bottom: 5px;
-}
-
-.filled {
+.filled:nth-of-type(1) {
     position: relative;
     margin: 0;
     padding: 0;
     padding-left: 31px;
     margin-left: 15px;
+
+    cursor: pointer;
+}
+
+.filled:nth-of-type(2) {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-left: 32px;
+    margin-left: 20px;
+
+    cursor: pointer;
+}
+
+.filled:nth-of-type(3) {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-left: 34px;
+    margin-left: 20px;
+
+    cursor: pointer;
+}
+
+.filled:nth-of-type(4) {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-left: 32px;
+    margin-left: 22px;
+
+    cursor: pointer;
+}
+
+.filled:nth-of-type(5) {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-left: 34px;
+    margin-left: 21px;
 
     cursor: pointer;
 }
@@ -2080,7 +2186,8 @@ input[type="text"]:focus{
 .button-filter {
     display: block;
     padding: 7px 28px 7px 28px;
-    margin-top: 20px;
+    margin-left: 14px;
+    margin-top: 28px;
     box-sizing: border-box;
 
     width: 144px;
