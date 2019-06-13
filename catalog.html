@@ -178,12 +178,12 @@
             <legend>Жирность:</legend>
             <div class="filter-fattiness-container">
               <label class="fat">
-                <input class="visually-hidden" type="radio" id="percent-1" name="percent" value="0%">
+                <input class="visually-hidden" type="radio" name="percent" value="0%">
                 <span class="radio-indicator"></span>
                 0%
               </label>
               <label class="fat">
-                <input class="visually-hidden" type="radio" id="percent-2" name="percent" value="10%">
+                <input class="visually-hidden" type="radio" name="percent" value="10%">
                 <span class="radio-indicator"></span>
                 до 10%
               </label>
@@ -375,13 +375,14 @@
     <footer class="main-footer main-footer-catalog">
       <div class="pagination-container">
         <ul class="pagination-list">
-          <li class="pagination-item"><a href="#">
-              <</a> </li> <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+          <li class="pagination-item"><a class="start-element start-element-active" href="#">
+              </a> </li>
+          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item"><a href="#">4</a></li>
           <li class="pagination-item"><a href="#">5</a></li>
-          <li class="pagination-item"><a href="#">></a></li>
+          <li class="pagination-item"><a class="finish-element" href="#"></a></li>
         </ul>
       </div>
       <div class="footer-wrapper">

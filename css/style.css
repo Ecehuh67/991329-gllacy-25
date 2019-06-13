@@ -492,6 +492,18 @@ input[type="text"]:focus{
 
     border: 1px solid #d3d3d2;
     border-radius: 5px;
+    outline: none;
+    outline-offset: 0;
+}
+
+.search-buttom input:hover {
+    padding-left: 12px;
+    border: 2px solid #c7c6c5;
+}
+
+.search-buttom input:focus{
+    padding-left: 12px;
+    border: 2px solid #8fbdec;
 }
 
 .search-menu:first-child::after {
@@ -588,6 +600,19 @@ input[type="text"]:focus{
 
     border: 1px solid #d3d3d2;
     border-radius: 5px;
+
+    outline: none;
+    outline-offset: none;
+}
+
+.hower-personal-cabinet input:hover {
+    padding-left: 12px;
+    border: 2px solid #c7c6c5;
+}
+
+.hower-personal-cabinet input:focus{
+    padding-left: 12px;
+    border: 2px solid #8fbdec;
 }
 
 .hower-personal-cabinet input:last-of-type {
@@ -1856,6 +1881,12 @@ input[type="text"]:focus{
     border: none;
 }
 
+.filter-sort-select:hover,
+.filter-sort-select:focus {
+    color: #323232;
+    cursor:  pointer;
+}
+
 .filter-sort legend {
     margin-left: 16px;
     margin-bottom: 7px;
@@ -1946,6 +1977,20 @@ input[type="text"]:focus{
     cursor: pointer;
 }
 
+.range-toggle-min:hover,
+.range-toggle-min:focus {
+    top: -12px;
+    left: 22px;
+    border: 12px solid #ffffff;
+}
+
+.range-toggle-max:hover,
+.range-toggle-max:focus {
+    top: -12px;
+    left: 120px;
+    border: 12px solid #ffffff;
+}
+
 .range-toggle-min {
     left: 27px;
 }
@@ -2025,10 +2070,19 @@ input[type="text"]:focus{
     cursor: pointer;
 }
 
+.fat input[type="radio"] + .radio-indicator:hover,
+.fat input[type="radio"] + .radio-indicator:focus {
+    border: 3px solid #ffffff;
+}
+
+.fat input[type="radio"]:checked + .radio-indicator:before:hover {
+    background-color: #ffffff;
+}
+
 .fat input[type="radio"] + .radio-indicator {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 1px;
 
   width: 17px;
   height: 17px;
@@ -2054,6 +2108,7 @@ input[type="text"]:focus{
 
     background-color: #e1e7e3;
     border-radius: 50%;
+
 }
 
 .filter-fill {
@@ -2342,6 +2397,7 @@ background-color: rgba(155, 175, 163, 0.6);
     display:flex;
     justify-content: flex-end;
     justify-content: space-between;
+    position: relative;
 
     margin: 0;
     padding: 0;
@@ -2349,6 +2405,57 @@ background-color: rgba(155, 175, 163, 0.6);
     width: 200px;
 
     list-style: none;
+}
+
+.start-element::after,
+.start-element::before {
+    content: " ";
+    position: absolute;
+    top: 10px;
+    left: 4px;
+
+    width: 9px;
+    height: 1px;
+
+    background-color: #ffffff;
+}
+
+.start-element::before {
+    transform: rotate(140deg);
+}
+
+.start-element::after {
+    top: 16px;
+    left: 4px;
+    transform: rotate(225deg);
+}
+
+.start-element-active {
+    opacity: 0.3;
+}
+
+.finish-element::after,
+.finish-element::before {
+    content: " ";
+    position: absolute;
+    top: 11px;
+    left: 187px;
+
+    width: 9px;
+    height: 1px;
+
+    background-color: #ffffff;
+}
+
+.finish-element::before {
+
+    transform: rotate(47deg);
+}
+
+.finish-element::after {
+    top: 17px;
+    left: 187px;
+    transform: rotate(135deg);
 }
 
 .pagination-list a{
