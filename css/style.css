@@ -1923,10 +1923,11 @@ input[type="text"]:focus{
     background-color: inherit;
 }
 
+/*
 .catalog-filters p{
     margin: 0;
     padding: 0;
-}
+}*/
 
 .catalog-filters input{
     font: inherit;
