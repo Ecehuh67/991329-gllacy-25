@@ -1747,21 +1747,21 @@ input[type="text"]:focus{
 
 @keyframes  appear {
  0% {
-     transform: translateY(-2000px);
+     transform: translateY(-2000px);  /*-2000*/
  }
 
  50% {
-     transform: translateY(30px);
+     transform: translateY(30px);    /*30*/
 
  }
 
  90% {
-     transform: translateY(-20px);
+     transform: translateY(-20px);    /*-20*/
 
  }
 
  100% {
-     transform: translateY(0px);
+     transform: translateY(0px);     /*0*/
 
  }
 
@@ -1922,12 +1922,6 @@ input[type="text"]:focus{
 
     background-color: inherit;
 }
-
-/*
-.catalog-filters p{
-    margin: 0;
-    padding: 0;
-}*/
 
 .catalog-filters input{
     font: inherit;
