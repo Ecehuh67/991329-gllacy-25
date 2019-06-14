@@ -281,6 +281,7 @@ input[type="text"]:focus{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     position: relative;
 
     margin: 0;
@@ -351,6 +352,12 @@ input[type="text"]:focus{
     color: #333333;
 
 }
+                        /*For overflow*/
+.hower-items li {
+    padding: 7px 21px 15px 20px;
+}
+                        /*            */
+
 .hower-items li:first-child {
     position: relative;
     padding: 10px 21px 12px 20px;
@@ -442,6 +449,7 @@ input[type="text"]:focus{
 .user-fields-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: flex-start;
     position: relative;
 
@@ -1077,6 +1085,7 @@ input[type="text"]:focus{
     background-image: url("../img/promo-1.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
     border-radius: 15px;
 }
@@ -1112,6 +1121,7 @@ input[type="text"]:focus{
     background-image: url("../img/promo-2.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 15px;
 }
 
@@ -1272,7 +1282,7 @@ input[type="text"]:focus{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: relative;
+    /*position: relative;*/
 
     margin: 0;
     padding: 0;
@@ -1288,7 +1298,9 @@ input[type="text"]:focus{
     list-style: none;
 }
 
+                    /*  Переделать на переполнение - позиционирование*/
 .main-description-advantages li{
+    position: relative;
     width: 483px;
 }
 
