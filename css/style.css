@@ -337,12 +337,11 @@ input[type="text"]:focus{
     width: 60px;
     height: 5px;
 
-    background-color: #849d8f;
+    background-color: transparent;
 }
 
 .hower-items a {
     display: block;
-    /*padding: 12px 20px 15px 22px;*/
 }
 
 .hower-items li:not(:first-child) {
@@ -406,13 +405,18 @@ input[type="text"]:focus{
     color: #ffffff;
 }
 
-.cite-navigation > li:first-child:hover,
-.cite-navigation > li:first-child:focus {
+.active-catalog > a {
+    border: none;
+}
+
+
+.cite-navigation .active-catalog:hover,
+.cite-navigation .active-catalog:focus {
     background-color: #d07058;
 }
 
-.cite-navigation-point:first-child:hover > a,
-.cite-navigation-point:first-child:focus > a{
+.active-catalog:hover > a,
+.active-catalog:focus > a{
     color: #ffffff;
 }
 
@@ -515,7 +519,7 @@ input[type="text"]:focus{
     width: 150px;
     height: 5px;
 
-    background-color: #849d8f;
+    background-color: transparent;
 }
 
 .user-fields-list li:hover .search-buttom {
@@ -539,7 +543,7 @@ input[type="text"]:focus{
     width: 85px;
     height: 3px;
 
-    background-color: #849d8f;
+    background-color: transparent;
 }
 
 .button-enterance {
@@ -721,7 +725,7 @@ input[type="text"]:focus{
     width: 105px;
     height: 4px;
 
-    background-color: #849d8f;
+    background-color: transparent;
 }
 
 .basket-menu-active {
@@ -997,7 +1001,7 @@ input[type="text"]:focus{
 
 .breadcrumbs {
     display: flex;
-    position: relative;
+
     justify-content: space-between;
 
     padding: 0;
@@ -1010,6 +1014,10 @@ input[type="text"]:focus{
 
 }
 
+.breadcrumbs li {
+    position: relative;
+}
+
 .breadcrumbs a {
     font-size: 14px;
     line-height: 16px;
@@ -1017,21 +1025,17 @@ input[type="text"]:focus{
     color: #ffffff;
 
     background-color: inherit;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.breadcrumbs li:nth-of-type(1)::after {
+.breadcrumbs li:last-child a {
+    border: none;
+}
+
+.breadcrumbs li:not(:last-of-type)::after {
     content: "»";
     position: absolute;
     left: 60px;
-
-    width: 7px;
-    height: 7px;
-}
-
-.breadcrumbs li:nth-of-type(2)::after {
-    content: "»";
-    position: absolute;
-    left: 133px;
 
     width: 7px;
     height: 7px;
@@ -1905,6 +1909,10 @@ input[type="text"]:focus{
 
     -webkit-appearance: none;
     background-color: rgba(255, 255, 255, 0.2);
+    background-image: url("../img/icon-filter.svg");
+    background-position: right;
+    background-position-x: 168px;
+    background-repeat: no-repeat;
     border: none;
     border-radius: 30px;
     color: #ffffff;
@@ -1937,12 +1945,6 @@ input[type="text"]:focus{
   position: relative;
 
   margin-bottom: 12px;
-
-  /*box-sizing: border-box;
-  padding: 8px 15px 8px 15px;;
-
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 20px;*/
 }
 
 .range-controls .scale {
@@ -2199,10 +2201,10 @@ input[type="text"]:focus{
   top: 0;
   left: 0;
 
-  width: 17px;
-  height: 17px;
+  width: 16px;
+  height: 16px;
 
-  border: 1px solid #e1e7e3;
+  border: 2px solid #e1e7e3;
 }
 
 .filled input[type="checkbox"]:focus + .checkbox-indicator {
