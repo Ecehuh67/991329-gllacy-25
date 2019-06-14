@@ -281,15 +281,15 @@
             <h2 class="visually-hidden">Обратная связь</h2>
             <p>Мы обязательно вам ответим!</p>
             <ul class="comments-fields">
-              <li>
+              <li class="comments-fields-point">
                 <label class="visually-hidden" for="contact-name">Ваше имя</label>
                 <input type="text" name="first-name" placeholder="Как вас зовут?" id="contact-name">
               </li>
-              <li>
+              <li class="comments-fields-point">
                 <label class="visually-hidden" for="contact-email">Электронная почта </label>
                 <input type="text" name="email-for-call" placeholder="Ваша почта для ответа?" id="contact-email">
               </li>
-              <li>
+              <li class="comments-fields-point">
                 <label class="visually-hidden" for="your-question">Ваш вопрос</label>
                 <textarea placeholder="Напишите что-нибудь..." id="your-question"></textarea>
               </li>
@@ -344,25 +344,8 @@
 
   <div class="overlay">
   </div>
-  
-  <script>
-    var link = document.querySelector(".feedback-link");
-    var popup = document.querySelector(".comments");
-    var overlay = document.querySelector(".overlay");
-    var close = popup.querySelector(".modal-close-main");
 
-    link.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.add("comments-show");
-      overlay.classList.add("overlay-show");
-    });
-
-    close.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.remove("comments-show");
-      overlay.classList.remove("overlay-show");
-    });
-  </script>
+  <script src="js/feedback.js"></script>
 </body>
 
 </html>

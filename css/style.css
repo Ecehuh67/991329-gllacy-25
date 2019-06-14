@@ -1617,7 +1617,7 @@ input[type="text"]:focus{
     list-style: none;
 }
 
-.comments-fields li:nth-child(1) input{
+.comments-fields-point input{
     box-sizing: border-box;
     padding-left: 13px;
     margin-left: 1px;
@@ -1630,20 +1630,7 @@ input[type="text"]:focus{
     border-radius: 5px;
 }
 
-.comments-fields li:nth-child(2) input{
-    box-sizing: border-box;
-    padding-left: 13px;
-    margin-left: 1px;
-    margin-bottom: 20px;
-
-    width: 267px;
-    min-height: 44px;
-
-    border: 1px solid #d3d3d2;
-    border-radius: 5px;
-}
-
-.comments-fields li:nth-child(3) textarea{
+.comments-fields-point textarea{
     box-sizing: border-box;
     padding-left: 13px;
     padding-top: 10px;
@@ -1654,6 +1641,24 @@ input[type="text"]:focus{
 
     border: 1px solid #d3d3d2;
     border-radius: 5px;
+}
+
+.comments-fields-point input,
+.comments-fields-point textarea {
+    outline: none;
+    outline-offset: none;
+}
+
+.comments-fields-point input:hover,
+.comments-fields-point textarea:hover {
+    padding-left: 12px;
+    border: 2px solid #c7c6c5;
+}
+
+.comments-fields-point input:focus,
+.comments-fields-point textarea:focus {
+    padding-left: 12px;
+    border: 2px solid #8fbdec;
 }
 
 .feedback {
