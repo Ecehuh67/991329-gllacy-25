@@ -2258,6 +2258,7 @@ input[type="text"]:focus{
   height: 16px;
 
   border: 2px solid #e1e7e3;
+  border-radius: 2px;
 }
 
 .filled input[type="checkbox"]:focus + .checkbox-indicator {
