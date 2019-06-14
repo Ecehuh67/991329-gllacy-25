@@ -1471,6 +1471,19 @@ input[type="text"]:focus{
     box-sizing: border-box;
     border-radius: 5px;
     border: 1px solid #d3d3d2;
+
+    outline: none;
+    outline-offset: none;
+}
+
+.subscribe input:hover {
+    padding-left: 12px;
+    border: 2px solid #c7c6c5;
+}
+
+.subscribe input:focus{
+    padding-left: 12px;
+    border: 2px solid #8fbdec;
 }
 
 .button-subscribe {
@@ -1893,6 +1906,10 @@ input[type="text"]:focus{
 .filter-sort-select:hover,
 .filter-sort-select:focus {
     color: #323232;
+    background-image: url("../img/icon-filter-active.svg");
+    background-position: right;
+    background-position-x: 168px;
+    background-repeat: no-repeat;
     cursor:  pointer;
 }
 
