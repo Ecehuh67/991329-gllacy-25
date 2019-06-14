@@ -17,12 +17,15 @@ close.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.remove("comments-show");
   overlay.classList.remove("overlay-show");
+  popup.classList.remove("comments-err");
 });
 
 form.addEventListener("submit", function(evt) {
     if (!contactName.value || !email.value)
     evt.preventDefault();
-    console.log("Заполните поля формы");
+    popup.classList.remove("comments-err");
+    popup.offsetWidth = popup.offsetWidth
+    popup.classList.add("comments-err");
 });
 
 window.addEventListener("keydown", function(evt) {
@@ -31,6 +34,7 @@ window.addEventListener("keydown", function(evt) {
         if (popup.classList.contains("comments-show") || overlay.classList.contains("overlay-show")) {
             popup.classList.remove("comments-show");
             overlay.classList.remove("overlay-show");
+            popup.classList.remove("comments-err");
         }
     }
 });
