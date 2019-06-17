@@ -1189,13 +1189,10 @@ a {
 
   background-color: #849d8f;
   background-image: url("../img/promo-1.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: top -94px right -177px;
   border-radius: 15px;
 }
-
-.main-promo-raspberry>* {}
 
 .main-promo-raspberry h4,
 .main-promo-raspberry p {
@@ -1231,8 +1228,7 @@ a {
   background-color: #849d8f;
   background-image: url("../img/promo-2.jpg");
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat-y;
   border-radius: 15px;
 }
 
