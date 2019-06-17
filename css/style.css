@@ -39,18 +39,18 @@ a {
 }
 
 .slider-wrapper::before {
-  background-image: #849d8f url("../img/slider-foto-2.png");
+  background-image: url("../img/slider-foto-2.png");
 }
 
 .slider-wrapper::after {
-  background-image: #849d8f url("../img/slider-foto-3.png");
+  background-image: url("../img/slider-foto-3.png");
 }
 
 .slider-wrapper {
   min-width: 1146px;
 
   background-color: #849d8f;
-  background-image: #849d8f url("../img/slider-foto-1.png");
+  background-image: url("../img/slider-foto-1.png");
   background-repeat: no-repeat;
   background-position: top 82px center;
 
@@ -146,17 +146,17 @@ a {
 
 #product-1:checked~.slider-wrapper {
   background-color: #849d8f;
-  background-image: #849d8f url("../img/slider-foto-1.png");
+  background-image: url("../img/slider-foto-1.png");
 }
 
 #product-2:checked~.slider-wrapper {
   background-color: #8996a6;
-  background-image: #849d8f url("../img/slider-foto-2.png");
+  background-image: url("../img/slider-foto-2.png");
 }
 
 #product-3:checked~.slider-wrapper {
   background-color: #9d8b84;
-  background-image: #849d8f url("../img/slider-foto-3.png");
+  background-image: url("../img/slider-foto-3.png");
 }
 
 #product-1:checked~.slider-wrapper #slide1,
@@ -205,14 +205,6 @@ a {
   z-index: 20;
 
   font-size: 0;
-}
-
-input[type="text"]:hover {
-  border: 1px solid #cccccc;
-}
-
-input[type="text"]:focus {
-  border: 1px solid #99ccff;
 }
 
 .main-header {
@@ -1181,7 +1173,8 @@ input[type="text"]:focus {
   width: 560px;
   min-height: 229px;
 
-  background-image: #849d8f url("../img/promo-1.jpg");
+  background-color: #849d8f;
+  background-image: url("../img/promo-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1221,7 +1214,8 @@ input[type="text"]:focus {
   width: 560px;
   min-height: 229px;
 
-  background-image: #849d8f url("../img/promo-2.jpg");
+  background-color: #849d8f;
+  background-image: url("../img/promo-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1373,7 +1367,8 @@ input[type="text"]:focus {
   font-weight: 400;
 
   color: #333333;
-  background-image: #ffffff url("../img/waffle-pattern.jpg");
+  background-color: #ffffff;
+  background-image: url("../img/waffle-pattern.jpg");
   border-radius: 15px;
 }
 
@@ -1517,7 +1512,8 @@ input[type="text"]:focus {
   font-weight: 700;
 
   color: #333333;
-  background-image: #ffffff url("../img/straw-back.jpg");
+  background-color: #ffffff;
+  background-image: url("../img/straw-back.jpg");
   background-repeat: no-repeat;
   background-position: top -225px left -52px;
   border-radius: 15px;
@@ -1575,7 +1571,8 @@ input[type="text"]:focus {
   font-weight: 400;
 
   color: #333333;
-  background-image: #ffffff url("../img/subscribe-form.png");
+  background-color: #ffffff;
+  background-image: url("../img/subscribe-form.png");
   background-repeat: no-repeat;
 }
 
