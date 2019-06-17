@@ -1108,7 +1108,7 @@ a {
   list-style: none;
 }
 
-.breadcrumbs li {
+.breadcrumbs-item {
   position: relative;
 }
 
@@ -1122,17 +1122,22 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.breadcrumbs-last-link:last-child a {
+.breadcrumbs-last-link a {
   border: none;
 }
 
-.breadcrumbs li:not(:last-of-type)::after {
+.breadcrumbs-item:not(:last-of-type)::after {
   content: "»";
   position: absolute;
   left: 60px;
 
   width: 7px;
   height: 7px;
+}
+
+.breadcrumbs-item:hover a,
+.breadcrumbs-item:focus a {
+    color: #ffbc9e;
 }
 
 .main-user-fields {
