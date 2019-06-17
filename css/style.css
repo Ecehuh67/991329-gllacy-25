@@ -1282,7 +1282,6 @@ input[type="text"]:focus{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /*position: relative;*/
 
     margin: 0;
     padding: 0;
@@ -1298,7 +1297,6 @@ input[type="text"]:focus{
     list-style: none;
 }
 
-                    /*  Переделать на переполнение - позиционирование*/
 .main-description-advantages li{
     position: relative;
     width: 483px;
@@ -1344,7 +1342,7 @@ input[type="text"]:focus{
     content: " ";
     position: absolute;
     top: 4px;
-    left: 509px;
+    left: -58px;
 
     width: 50px;
     height: 50px;
@@ -1357,7 +1355,7 @@ input[type="text"]:focus{
 .leaf-icon::before {
     content: " ";
     position: absolute;
-    top: 92px;
+    top: -12px;
     left: -56px;
 
     width: 50px;
@@ -1369,8 +1367,8 @@ input[type="text"]:focus{
 .thermometr-icon::before {
     content: " ";
     position: absolute;
-    top: 92px;
-    left: 509px;
+    top: -12px;
+    left: -58px;
 
     width: 50px;
     height: 50px;
@@ -1925,7 +1923,7 @@ input[type="text"]:focus{
 
     margin-bottom: 35px;
 
-    width: 979px;  /*879*/
+    width: 979px;
 
     font-size: 16px;
     line-height: 18px;
