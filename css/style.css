@@ -790,6 +790,8 @@ a {
           box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   color: #323232;
+
+  border: 3px solid red;
 }
 
 .basket-menu {
@@ -823,6 +825,8 @@ a {
   min-height: 238px;
 
   border-radius: 5px;
+
+  border: 3px solid red;
 }
 
 .modal-close {
@@ -917,7 +921,7 @@ a {
   margin-left: 2px;
   margin-bottom: 0px;
 
-  width: 510px;
+  width: 484px;    /*510*/
   min-height: 127px;
 
   font-size: 13px;
@@ -925,6 +929,8 @@ a {
   font-weight: 400;
 
   border-bottom: 2px solid #cacac7;
+
+  border: 3px solid red;
 }
 
 .basket-second-row th:nth-of-type(1) {
@@ -974,7 +980,6 @@ a {
   padding-top: 4px;
 
   width: 105px;
-  min-height: 111px;
 
   font-size: 13px;
   line-height: 16px;
@@ -987,7 +992,6 @@ a {
   padding-top: 15px;
 
   width: 105px;
-  min-height: 111px;
 
   font-size: 13px;
   line-height: 16px;
