@@ -594,7 +594,7 @@ input[type="text"]:focus{
 
     background-color: #f8f7f4;
     border-radius: 5px;
-
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .user-fields-list li:hover .enter-form {
@@ -645,6 +645,10 @@ input[type="text"]:focus{
 
 .guess:last-of-type {
     margin-top: -3px;
+}
+
+.guess:hover a {
+    color: #e84d37;
 }
 
 .user-help {
@@ -1430,6 +1434,10 @@ input[type="text"]:focus{
     text-decoration: underline;
 }
 
+.recipe a:hover {
+    color: #e84d37;
+}
+
 .recipe h3 {
     margin: 0;
     padding: 0;
@@ -1880,6 +1888,10 @@ input[type="text"]:focus{
     background-repeat: no-repeat;
 }
 
+.footer-info a:hover {
+    color: #ffbc9e;
+}
+
 .footer-copyright {
 
     width: 190px;
@@ -1895,6 +1907,10 @@ input[type="text"]:focus{
 .footer-copyright p {
     margin: 0;
     padding: 0;
+}
+
+.footer-copyright a:hover {
+    color: #ffbc9e;
 }
 
 .html-link {
@@ -2140,7 +2156,7 @@ input[type="text"]:focus{
     border: 3px solid #ffffff;
 }
 
-.fat input[type="radio"]:checked + .radio-indicator:before:hover {
+.fat input[type="radio"]:checked + .radio-indicator:hover::before {
     background-color: #ffffff;
 }
 
@@ -2162,7 +2178,7 @@ input[type="text"]:focus{
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-.fat input[type="radio"]:checked + .radio-indicator:before {
+.fat input[type="radio"]:checked + .radio-indicator::before {
     content: " ";
     position: absolute;
     top: calc(50% - 4px);
@@ -2277,7 +2293,7 @@ input[type="text"]:focus{
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-.filled input[type="checkbox"]:checked + .checkbox-indicator:before {
+.filled input[type="checkbox"]:checked + .checkbox-indicator::before {
     content: " ";
     position: absolute;
     top: 8px;
@@ -2291,7 +2307,7 @@ input[type="text"]:focus{
     transform: rotate(45deg);
 }
 
-.filled input[type="checkbox"]:checked + .checkbox-indicator:after {
+.filled input[type="checkbox"]:checked + .checkbox-indicator::after {
     content: " ";
     position: absolute;
     top: 6px;
@@ -2302,6 +2318,15 @@ input[type="text"]:focus{
 
     background-color: #e1e7e3;
     transform: rotate(135deg);
+}
+
+.filled input[type="checkbox"]:checked + .checkbox-indicator:hover::before,
+.filled input[type="checkbox"]:checked + .checkbox-indicator:hover::after {
+    background-color: #ffffff;
+}
+
+.filled input[type="checkbox"] + .checkbox-indicator:hover {
+    border-color: #ffffff;
 }
 
 .button-filter {
@@ -2331,7 +2356,7 @@ input[type="text"]:focus{
 }
 
 .button-filter:active {
-    background-color: rgb(237, 237, 237);
+    background-color: rgba(237, 237, 237, 0.5);
     box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
 }
 
@@ -2429,8 +2454,8 @@ input[type="text"]:focus{
     opacity: 0;
 }
 
-.catalog-items li:hover:before,
-.catalog-items li:hover:after {
+.catalog-items li:hover::before,
+.catalog-items li:hover::after {
     opacity: 1;
 }
                            /*     */
