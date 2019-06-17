@@ -264,12 +264,12 @@ a {
   color: #333333;
 }
 
-.cite-navigation-point>a {
+.cite-navigation-point > a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.user-fields-list li:hover,
-.user-fields-list li:focus {
+.user-fields-list-point:hover,
+.user-fields-list-point:focus {
   background-color: #ffffff;
 }
 
@@ -285,6 +285,11 @@ a {
 .user-fields-list-point:hover circle,
 .user-fields-list-point:focus circle {
   fill: #323232;
+}
+
+.user-fields-list-point:last-of-type:hover polygon,
+.user-fields-list-point:last-of-type:focus polygon {
+    fill: #E84D37;
 }
 
 .cite-navigation {
