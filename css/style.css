@@ -830,7 +830,7 @@ a {
   margin-bottom: 5px;
 
   width: 15px;
-  height: 15px;
+  height: 20px;
 
   font-size: 0;
 
@@ -844,6 +844,7 @@ a {
   content: " ";
   position: absolute;
   left: -2px;
+  top: 11px;
 
   width: 15px;
   height: 1px;
@@ -868,13 +869,12 @@ a {
   margin-bottom: 20px;
 
   width: 15px;
-  height: 15px;
+  height: 20px;
 
   font-size: 0;
 
   border: 0;
   background-color: transparent;
-  background-color: re;
   cursor: pointer;
 }
 
@@ -883,6 +883,7 @@ a {
   content: " ";
   position: absolute;
   left: -2px;
+  top: 11px;
 
   width: 15px;
   height: 1px;
