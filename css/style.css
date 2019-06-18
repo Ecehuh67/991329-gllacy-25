@@ -2888,3 +2888,8 @@ a {
 .overlay-show {
   display: block;
 }
+
+#map {
+    height: 430px;
+    width: 1200px;
+}
