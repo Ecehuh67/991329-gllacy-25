@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-minimized.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500,400&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 </head>
 
@@ -254,11 +254,10 @@
             <input type="email" name="email" placeholder="Электронная почта">
             <button class="button-subscribe btn" type="submit" name="send-email">Отправить</button>
           </form>
-          <!--Плашка адреса-->
         </div>
+        <!--Плашка адреса-->
         <div class="main-map">
-          <!--<img src="img/map.png" width="1200" height="430" alt="Схема проезда">-->
-          <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002983!2d30.320858715925137!3d59.93871916905438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1560856508272!5m2!1sru!2sru" width="1200" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+          <div id="map"><img src="img/map-err.png" width="1200" height="430" alt="Схема проезда"></div>
           <section class="contacts">
             <h2>Адрес главного офиса и офлайн-магазина:</h2>
             <p class="adress">
@@ -273,9 +272,6 @@
             </p>
             <a class="btn feedback-link" href="feedback.html">Форма обратной связи</a>
           </section>
-          <div class="map-point">
-            <img src="img/map-point.png" width="80" height="140" alt="Указатель местоположения нга карте">
-          </div>
         </div>
         <!--Обратная связь-->
         <div class="comments">
@@ -345,27 +341,10 @@
   </div>
   <div class="overlay">
   </div>
-  <div id="map"></div>
   <script src="js/feedback-minimized.js"></script>
-
-
-    <script>
-        function initMap()
-        {
-            var element = document.getElementById('map');
-            var options = {
-                zoom: 5,
-                center: {lat: 55.7558 lng 37.6173}
-            };
-
-            var myMap = new google.maps.Map(element, options);
-
-        }
-    </script>
-
-      <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDweCXmw6MUU7qocxDAdhVkDG36SgrKFMk&callback=initMap">
-      </script>
+  <script src="js/map-minimized.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDweCXmw6MUU7qocxDAdhVkDG36SgrKFMk&callback=initMap">
+  </script>
 
 </body>
 

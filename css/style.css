@@ -1647,6 +1647,7 @@ a {
 .main-map {
   position: relative;
   margin-left: -27px;
+  margin-bottom: 4px;
 }
 
 .contacts {
@@ -1727,12 +1728,6 @@ a {
   font-weight: 700;
 
   color: inherit;
-}
-
-.map-point {
-  position: absolute;
-  top: 139px;
-  left: 266px;
 }
 
 .comments {
