@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -1577,7 +1577,8 @@ a {
   color: #333333;
   background-color: #ffffff;
   background-image: url("../img/subscribe-form.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
+  border-radius: 15px;
 }
 
 .subscribe p {
